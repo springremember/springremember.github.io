@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="我的博客">
+  <meta name="author" content="spring">
+  <meta name="keywords" content="github">
+  <title>arch安装基础篇 ~ spring&#39;s blog</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>spring's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" false
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期六, 一月 26日 2019, 8:59 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    943 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      3 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1 id="安装基础篇"><a href="#安装基础篇" class="headerlink" title="安装基础篇"></a>安装基础篇</h1><p>archLinux安装教程<br>写于2019年1月26日</p>
+<blockquote>
+<p>本人实验了基于BIOS模式下archlinux的安装<br>2019年4月实验了EFI模式下archlinux的安装</p>
+</blockquote>
+<p>参考资料：</p>
+<p>1.<a href="https://www.jianshu.com/p/2c45c5b4c1ab" target="_blank" rel="noopener">安装 Arch Linux 记录——配置</a></p>
+<p>2.<a href="https://blog.csdn.net/cristianojason/article/details/80033330" target="_blank" rel="noopener">ArchLinux(BIOS引导)</a></p>
+<p>3.<a href="https://blog.csdn.net/r8l8q8/article/details/76516523" target="_blank" rel="noopener">ArchLinux安装图文教程(EFI模式)</a></p>
+<p>4.<a href="https://www.cnblogs.com/bluestorm/p/5929172.html" target="_blank" rel="noopener">ArchLinux安装、配置、美化和优化(gnome桌面)</a></p>
+<p>5.<a href="https://www.jianshu.com/p/2c45c5b4c1ab" target="_blank" rel="noopener">安装ArchLinux记录–配置(i3wm)</a></p>
+<h3 id="1-连接网络"><a href="#1-连接网络" class="headerlink" title="1.连接网络"></a>1.连接网络</h3><p>无线网络：<code>wifi-menu</code></p>
+<p>拨号：<code>pppoe-setup</code></p>
+<p>测试网络：<code>ping -c 3 www.baidu.com</code></p>
+<h3 id="2-同步时间并编辑国内源"><a href="#2-同步时间并编辑国内源" class="headerlink" title="2.同步时间并编辑国内源"></a>2.同步时间并编辑国内源</h3><p>同步时间：<code>timedatectl set-ntp true</code></p>
+<p>编辑镜像站文件：<code>vim /etc/pacman.d/mirrorlist</code></p>
+<p>将China下网址复制到最开头</p>
+<p>更新软件仓库：<code>pacman -Syy</code></p>
+<h3 id="3-查看启动类型和分区"><a href="#3-查看启动类型和分区" class="headerlink" title="3.查看启动类型和分区"></a>3.查看启动类型和分区</h3><p>检查引导方式：</p>
+<blockquote>
+<p><code>ls /sys/firmware/efi/efivars</code></p>
+</blockquote>
+<p>若无该文件，则处于BIOS启动模式，反之EFI模式</p>
+<p>BIOS模式：</p>
+<p>分区：</p>
+<blockquote>
+<p>/boot分区，至少200M，FAT32文件系统<br>swap分区，为内存大小，swap文件系统<br>其余按照Linux分区格式</p>
+</blockquote>
+<p>格式化：</p>
+<blockquote>
+<p>boot分区：mkfs.fat -F32 /dev/boot分区<br>mkswap /dev/swap分区<br>swapon /dev/swap分区<br>其余分区自行选择文件系统，例如ext4、xfs等</p>
+</blockquote>
+<p>挂载分区：</p>
+<blockquote>
+<p>根目录挂载：mount /dev/根分区 /mnt<br>创建相应目录并挂载分区，例如/boot<br>mkdir /mnt/boot<br>mount /dev/boot分区</p>
+</blockquote>
+<p>EFI模式：</p>
+<p>分区：</p>
+<blockquote>
+<p>/boot/EFI分区，至少800M，文件系统FAT32<br>/swap分区，和内存一样大小，文件系统swap<br>其余按照Linux分区格式</p>
+</blockquote>
+<p>格式化：</p>
+<blockquote>
+<p>EFI分区：mkfs.fat -F32 /dev/EFI分区<br>mkswap /dev/swap分区<br>swapon /dev/swap分区<br>其余Linux，自行选择文件系统，例如ext4、xfs等</p>
+</blockquote>
+<p>挂载分区：</p>
+<blockquote>
+<p>挂载根分区：mount /dev/根分区<br>创建efi目录：mkdir -p /boot/EFI<br>挂载EFI：mount /dev/EFI分区  /boot/EFI</p>
+</blockquote>
+<h3 id="4-安装基本系统并切换"><a href="#4-安装基本系统并切换" class="headerlink" title="4.安装基本系统并切换"></a>4.安装基本系统并切换</h3><p>安装基本系统：<code>pacstrap -i /mnt base base-devel</code></p>
+<p>解释：/mnt对应根目录，也就是之前挂载的根分区。base和base-devel是基本系统包</p>
+<p>配置开机挂载文件(fstab)：<code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code></p>
+<p>查看配置文件：<code>cat /mnt/etc/fstab</code></p>
+<p>切换新系统：<code>arch-chroot /mnt</code></p>
+<h3 id="5-vim和语系、时区设置并设置同步时间"><a href="#5-vim和语系、时区设置并设置同步时间" class="headerlink" title="5. vim和语系、时区设置并设置同步时间"></a>5. vim和语系、时区设置并设置同步时间</h3><p>安装vim：<code>pacman -S vim</code></p>
+<p>编辑语系：<code>vim /etc/locale.gen</code></p>
+<p>将en_US.UTF-8和zh_CN.UTF-8,前面#删除</p>
+<p>使其有效：<code>locale-gen</code></p>
+<p>新建<code>/etc/locale.conf</code>文件，添加内容：<code>LANG=en_US.UTF-8</code></p>
+<p>时区设置(使用hwclock同步硬件时间)：</p>
+<p><code>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</code></p>
+<p><code>hwclock --systohc</code></p>
+<h3 id="6-引导设置"><a href="#6-引导设置" class="headerlink" title="6.引导设置"></a>6.引导设置</h3><p>BIOS模式：</p>
+<blockquote>
+<p>安装检测启动项软件：<code>pacman -S os-prober</code><br>安装grub：<code>pacman -S grub</code><br>部署grub：<code>grub-install --target=i386-pc /dev/磁盘名(sda、sdb一类，不带数字)</code><br>生成配置文件：<code>grub-mkconfig -o /boot/grub/grub.cfg</code></p>
+</blockquote>
+<p>EFI模式：</p>
+<blockquote>
+<p>安装引导程序：<code>pacman -S dosfstools grub efibootmgr os-prober</code><br>部署grub：<code>grub-install --target=x86_64-efi --efi-directory=/boot/EFI --recheck</code><br>生成配置文件：<code>grub-mkconfig -o /boot/grub/grub.cfg</code></p>
+</blockquote>
+<h3 id="7-用户设置和配置sudo"><a href="#7-用户设置和配置sudo" class="headerlink" title="7.用户设置和配置sudo"></a>7.用户设置和配置sudo</h3><p>设置root密码：<code>passwd</code></p>
+<p>安装sudo：<code>pacman -S sudo</code></p>
+<p>新建用户：<code>useradd -m 你的用户名</code></p>
+<p>设置新用户密码：<code>passwd 设置的用户名</code></p>
+<p>配置sudo：</p>
+<blockquote>
+<p><code>visudo</code></p>
+</blockquote>
+<p>找到root ALL=(ALL)ALL</p>
+<p>添加一行：你的用户名的群组(一般就是你的用户名)  ALL=(ALL)ALL</p>
+<h3 id="8-开机联网-若使用deepin桌面可以跳过"><a href="#8-开机联网-若使用deepin桌面可以跳过" class="headerlink" title="8.开机联网(若使用deepin桌面可以跳过)"></a>8.开机联网(若使用deepin桌面可以跳过)</h3><p>网络管理安装：<code>pacman -S networkmanager</code></p>
+<p>网络管理开机启动：<code>systemctl enable NetworkManager</code></p>
+<p>有线连接开机启动：<code>systemctl enable dhcpcd</code></p>
+<p>无线连接检测：<code>wifi-menu</code>，并按照提示安装需要软件包</p>
+<h3 id="9-自行设置swap文件-可选"><a href="#9-自行设置swap文件-可选" class="headerlink" title="9.自行设置swap文件(可选)"></a>9.自行设置swap文件(可选)</h3><p>设置交换文件(可选)：</p>
+<p>生成交换文件：<code>fallocate -l 大小(4G) /swapfile</code></p>
+<p>更改权限：<code>chmod 600 /swapfile</code></p>
+<p>格式化为swap：<code>mkswap /swapfile</code></p>
+<p>启用交换文件：<code>swapon /swapfile</code></p>
+<p>设置自动挂载：<code>vim /etc/fstab</code></p>
+<p>最后一行添加：<code>/swapfile none swap defaults 0 0</code></p>
+<p>至此，基本系统安装完毕，下面是桌面系统安装和常用软件配置。</p>
+<p>请重启后继续。</p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Linux">Linux</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/arch">arch</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv"></span>总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv"></span>总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人&nbsp;
+  
+  <br>
+
+
+
+    
+
+
+    <!-- cnzz Analytics icon -->
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smoothscroll/SmoothScroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  <!-- cnzz Analytics -->
+  
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "arch安装基础篇&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

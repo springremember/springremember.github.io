@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="我的博客">
+  <meta name="author" content="spring">
+  <meta name="keywords" content="github">
+  <title>Vimrc配置文件 ~ spring&#39;s blog</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>spring's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" false
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期五, 十一月 10日 2017, 2:39 下午
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    632 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      2 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1 id="我的vimrc配置文件"><a href="#我的vimrc配置文件" class="headerlink" title="我的vimrc配置文件"></a>我的vimrc配置文件</h1><pre><code class="vimrc">&quot;目录
+&quot;第一章:基本全局设定{{{
+"1.1 语法高亮
+"1.2 配色方案设置
+"1.3 显示行号设置
+"1.4 不兼容vi
+"1.5 使用系统剪切板
+"1.6 设置当前行高亮 
+"1.7 设置状态栏 
+"1.8 vimrc的折叠设定 
+"1.9 搜索高亮设置  
+"1.10 制表符设置 
+"1.11 自动换行
+"1.12 文件类型检测
+"1.13 鼠标支持
+"1.14 编码支持
+"}}} 
+&quot;第二章：映射{{{
+"2.1 leader setting and local-leader setting
+"2.2 correct the bad habbits.
+"2.3 set the abbreviation
+"2.4 workman layout
+"2.5 make the select-area surround by the symbol you need.
+"2.6 快速设置vimrc
+"}}}
+&quot;第三章：自动匹配和自动补全{{{
+"3.1 {}匹配
+"3.2 ()匹配
+"3.3 ""匹配
+"3.4 ''匹配
+"3.5 <>匹配
+"3.6 <tab>自动补全
+"}}}
+&quot;第四章：插件{{{
+"}}}
+&quot;第五章：Java语言设置{{{
+"5.1 Java anotationn
+"5.2 Java 编译设置
+"5.3 Java 运行设置
+"5.4 Java 输出缩写
+"5.5 Java 主函数缩写
+"}}}
+
+&quot;1.1-1.4 合并设置{{{
+"1.1语法高亮
+syntax on
+
+"1.2配色方案
+colorscheme desert
+
+"1.3显示行号
+set nu
+
+"1.4设置不兼容vi
+:set nocompatible
+"}}}
+&quot;1.5 用于处理复制粘贴问题{{{
+"需要先查看是否支持系统剪贴板
+"普通模式映射sp作为粘贴命令
+nmap sp "+p
+"可视模式下映射sy作为复制命令
+vmap sy "+y
+"}}}
+&quot;1.6 当前行高亮{{{
+set cursorline
+
+"当前行高亮的配色:透明带
+hi CursorLine   cterm=NONE ctermbg=237 ctermfg=NONE guibg=darkred guifg=white
+"}}}
+&quot;1.7 设置状态栏{{{
+:set laststatus=2
+:set statusline=%4*\ %F\ %* 
+:set statusline+=%=
+:set statusline+=\ %l
+:set statusline+=/
+:set statusline+=%L
+"}}}
+&quot;1.8 vimrc折叠设定---------------{{{
+set foldmethod=indent
+augroup filetype_vim
+	autocmd!
+	autocmd FileType vim setlocal foldmethod=marker
+augroup END
+nnoremap <space> za
+"}}}
+&quot;1.9 搜索设置{{{
+set hlsearch
+"}}}
+&quot;1.10 设置制表符与空格转化{{{
+set tabstop=4
+"}}}
+&quot;1.11 基本自动对齐{{{
+set autoindent
+set smartindent
+set shiftwidth=4
+set showmatch
+"}}}
+&quot;1.12 文件类型检测{{{
+filetype plugin indent on
+"}}}
+&quot;1.13 鼠标支持{{{
+set mouse=a
+"}}}
+&quot;1.14 编码支持{{{
+set fileencodings=utf-8,gbk,gb18030,utf-16,big5
+"}}}
+
+&quot;2.1 设置前缀{{{
+"设置前缀leader
+let mapleader = ";"
+
+"设置本地前缀localleader
+let maplocalleader = "," 
+"}}}
+&quot;2.2 改正坏习惯{{{
+"设置插入模式快速返回普通模式,并取消esc
+inoremap hh <esc>
+" inoremap <esc> <nop>
+
+"取消上下左右键
+map <left> <nop>
+map <right> <nop>
+map <up> <nop>
+map <down> <nop>
+"}}}
+&quot;2.3 设置abbreviation{{{
+iabbrev @@ 1143515591@qq.com
+iabbrev hmc 何铭春
+"}}}
+&quot;2.4 设置workman键盘布局{{{
+" nnoremap j k
+" nnoremap k j
+"}}}
+&quot;2.5 设置选中区域加引号{{{
+vnoremap hh <esc>a"<esc>`<i"<esc>
+"}}}
+&quot;2.6 vimrc快速设置{{{
+
+"快速编辑vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
+"快速重载vimrc
+:nnoremap <leader>sv :source $MYVIMRC<cr>
+"}}}
+
+&quot;3.1 {}匹配{{{
+inoremap { {}<esc>i<cr><esc>ko
+"}}}
+&quot;3.2 ()匹配{{{
+inoremap ( ()<esc>i
+
+function SkipParen()
+	let temp=getline('.')[col('.')-1]
+	if temp==")"
+		return "\<esc>la"
+	else
+		return ")"
+	endif
+endfunction
+
+inoremap ) <c-r>=SkipParen()<cr>
+"}}}
+&quot;3.3 &quot;&quot;匹配{{{
+function SkipQuotation()
+	let temp=getline('.')[col('.')-1]
+	if temp=='"'
+		return "\<esc>la"
+	else
+		return '""'."\<esc>i"
+	endif
+endfunction
+
+inoremap " <c-r>=SkipQuotation()<cr>
+"}}}
+&quot;3.4 &#39;&#39;匹配{{{
+function SkipOtherQuotation()
+	let temp=getline('.')[col('.')-1]
+	if temp=="'"
+		return "\<esc>la"
+	else
+		return "''\<esc>i"
+	endif
+endfunction
+
+inoremap ' <c-r>=SkipOtherQuotation()<cr>
+"}}}
+&quot;3.5 &lt;&gt;匹配{{{
+inoremap < <><esc>i
+
+function SkipBook()
+	let temp=getline('.')[col('.')-1]
+	if temp==">"
+		return "\<esc>la"
+	else
+		return ">"
+	endif
+endfunction
+
+inoremap > <c-r>=SkipBook()<cr>
+"}}}
+&quot;3.6 &lt;tab&gt;自动补全{{{
+set omnifunc=omni
+inoremap <tab> <c-n>
+"}}}
+
+&quot;vimrc取消部分匹配
+    autocmd FileType vim inoremap { {
+
+&quot;5.1 Java 注释{{{
+function JavaAnnotation()
+let temp=getline(".")
+let aTemp=temp[0].temp[1]
+if aTemp ==# "//"
+normal ^xx
+else
+normal I//
+endif
+endfunction
+
+:autocmd FileType java nnoremap <buffer><leader>a :call JavaAnnotation()<cr>
+"}}}
+&quot;5.2 Java 编译设置{{{
+set makeprg=javac\ @%
+:autocmd FileType java nnoremap <buffer><F4> :!javac %<cr>
+"}}}
+&quot;5.3 运行Java{{{
+:autocmd FileType java nnoremap <buffer><F5> :!java %:r<cr>
+"}}}
+&quot;5.4 输出配置{{{
+autocmd FileType java iab pl System.out.println("
+autocmd FileType java iab pp System.out.print("
+"}}}
+&quot;5.5 main函数设置{{{
+:autocmd FileType java iab main public static void main(String[] args){
+"}}}</cr></F5></buffer></cr></F4></buffer></cr></leader></buffer></c-n></tab></cr></c-r></esc></esc></cr></c-r></esc></esc></cr></c-r></esc></esc></cr></c-r></esc></esc></esc></cr></esc></cr></leader></cr></leader></i"<esc></esc></esc></nop></down></nop></up></nop></right></nop></left></nop></esc></esc></space></tab></code></pre>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Linux">Linux</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/Vim">Vim</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv"></span>总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv"></span>总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人&nbsp;
+  
+  <br>
+
+
+
+    
+
+
+    <!-- cnzz Analytics icon -->
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smoothscroll/SmoothScroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  <!-- cnzz Analytics -->
+  
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Vimrc配置文件&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

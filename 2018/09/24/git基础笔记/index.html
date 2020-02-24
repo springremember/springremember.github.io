@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="我的博客">
+  <meta name="author" content="spring">
+  <meta name="keywords" content="github">
+  <title>git基础笔记 ~ spring&#39;s blog</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>spring's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" false
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期一, 九月 24日 2018, 9:10 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    492 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      2 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>参考书籍：<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">git书籍</a></p>
+<h3 id="一-初始配置"><a href="#一-初始配置" class="headerlink" title="一.初始配置"></a>一.初始配置</h3><p>git config –global user.name ‘yourName’</p>
+<p>git config –global user.email yourEmail</p>
+<p>git config –list</p>
+<h3 id="二-git基本操作"><a href="#二-git基本操作" class="headerlink" title="二.git基本操作"></a>二.git基本操作</h3><p><img src="/2018/09/24/git%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/01.jpeg" srcset="/img/loading.gif" alt="01_git基本操作 .jpg"></p>
+<h3 id="三-版本操作"><a href="#三-版本操作" class="headerlink" title="三.版本操作"></a>三.版本操作</h3><p><img src="/2018/09/24/git%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/02.jpeg" srcset="/img/loading.gif" alt="02_git版本库操作.jpg"></p>
+<h3 id="四-日志管理log"><a href="#四-日志管理log" class="headerlink" title="四.日志管理log"></a>四.日志管理log</h3><h4 id="4-1-显示方式（加粗表示最常用"><a href="#4-1-显示方式（加粗表示最常用" class="headerlink" title="4.1 显示方式（加粗表示最常用)"></a>4.1 显示方式（加粗表示最常用)</h4><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-p</td>
+<td>补丁格式显示差异</td>
+</tr>
+<tr>
+<td>–stat</td>
+<td>更新文件统计</td>
+</tr>
+<tr>
+<td>–name–status</td>
+<td>显示文件变化</td>
+</tr>
+<tr>
+<td><strong>–graph</strong></td>
+<td>图形显示分支</td>
+</tr>
+<tr>
+<td><strong>–pretty</strong></td>
+<td>以其他格式显示，如oneline、format</td>
+</tr>
+<tr>
+<td>–abbrev-commit</td>
+<td>显示简略SHA-1编号，也就是id号</td>
+</tr>
+<tr>
+<td><strong>–oneline</strong></td>
+<td>简略显示(–pretty=oneline –abbrev-commit)</td>
+</tr>
+</tbody></table>
+<p>注：format格式祥见参考资料。</p>
+<h4 id="4-2-条件筛选"><a href="#4-2-条件筛选" class="headerlink" title="4.2 条件筛选"></a>4.2 条件筛选</h4><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>–grep</strong></td>
+<td>正则搜索</td>
+</tr>
+<tr>
+<td>–author</td>
+<td>作者搜索</td>
+</tr>
+<tr>
+<td>–committer</td>
+<td>提交者搜索</td>
+</tr>
+<tr>
+<td>–all-match</td>
+<td>多条件都满足才显示</td>
+</tr>
+<tr>
+<td>–no-merges</td>
+<td>不显示合并操作历史</td>
+</tr>
+</tbody></table>
+<h4 id="4-3-时间筛选"><a href="#4-3-时间筛选" class="headerlink" title="4.3 时间筛选"></a>4.3 时间筛选</h4><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>-(n)</strong></td>
+<td>显示最近n条日志</td>
+</tr>
+<tr>
+<td>–since</td>
+<td>从….开始</td>
+</tr>
+<tr>
+<td>–before</td>
+<td>在….之前</td>
+</tr>
+</tbody></table>
+<p>注：日期格式 年-月-日</p>
+<h3 id="五-比较命令"><a href="#五-比较命令" class="headerlink" title="五.比较命令"></a>五.比较命令</h3><table>
+<thead>
+<tr>
+<th>具体形式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>git diff (filename)</td>
+<td>显示暂存和工作区差异</td>
+</tr>
+<tr>
+<td>git diff commit (filename)</td>
+<td>显示工作区和指定版本的差异</td>
+</tr>
+<tr>
+<td>git diff -cashed commit (filename)</td>
+<td>显示暂存区和版本库的差异</td>
+</tr>
+<tr>
+<td>git diff commit1 commit2 (filename)</td>
+<td>显示版本间差异</td>
+</tr>
+</tbody></table>
+<h3 id="六-SSH"><a href="#六-SSH" class="headerlink" title="六.SSH"></a>六.SSH</h3><h4 id="ssh-keygen"><a href="#ssh-keygen" class="headerlink" title="ssh-keygen"></a>ssh-keygen</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-b：指定密钥长度</td>
+</tr>
+<tr>
+<td>-e：读取openssh的私钥或者公钥文件</td>
+</tr>
+<tr>
+<td>-C：添加注释</td>
+</tr>
+<tr>
+<td>-f：指定用来保存密钥的文件名</td>
+</tr>
+<tr>
+<td>-i：读取未加密的ssh-v2兼容的私钥/公钥文件，然后在标准输出设备上显示openssh兼容的私钥/公钥</td>
+</tr>
+<tr>
+<td>-t：指定要创建的密钥类型</td>
+</tr>
+</tbody></table>
+<p>①ssh-keygen -t rsa -C 字符串</p>
+<p>②把公钥复制到 github</p>
+<h3 id="七-github"><a href="#七-github" class="headerlink" title="七.github"></a>七.github</h3><h4 id="7-1-网页比较"><a href="#7-1-网页比较" class="headerlink" title="7.1 网页比较"></a>7.1 网页比较</h4><table>
+<thead>
+<tr>
+<th>比较类型</th>
+<th>例子</th>
+<th>规律</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>分支间比较</td>
+<td><a href="https://github.com/rails/rails/" target="_blank" rel="noopener">https://github.com/rails/rails/</a><strong>compare</strong>/4-0-stable…3-2-stable</td>
+<td>仓库地址/compare/分支名…分支名</td>
+</tr>
+<tr>
+<td>某一时间段前</td>
+<td><a href="https://github.com/rails/rails/compare/master@%7B7.day.ago%7D...master" target="_blank" rel="noopener">https://github.com/rails/rails/compare/master@{7.day.ago}…master</a></td>
+<td>分支名+@+时间段…分支名(同)支持：day、week、month、year</td>
+</tr>
+<tr>
+<td>指定日期之间差别</td>
+<td><a href="https://github.com/rails/rails/compare/master@%7B2013-01-01%7D...master" target="_blank" rel="noopener">https://github.com/rails/rails/compare/master@{2013-01-01}…master</a></td>
+<td></td>
+</tr>
+</tbody></table>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Linux">Linux</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/git">git</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv"></span>总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv"></span>总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人&nbsp;
+  
+  <br>
+
+
+
+    
+
+
+    <!-- cnzz Analytics icon -->
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smoothscroll/SmoothScroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  <!-- cnzz Analytics -->
+  
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "git基础笔记&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

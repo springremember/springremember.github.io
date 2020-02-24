@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="我的博客">
+  <meta name="author" content="spring">
+  <meta name="keywords" content="github">
+  <title>spring&#39;s blog</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>spring's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="fas fa-angle-down scroll-down-arrow"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-md">
+        <div class="py-5 z-depth-3" id="board">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2020/02/24/vim%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E7%AC%94%E8%AE%B0/">
+        <p class="h4 index-header">vim实用技巧笔记</p>
+      </a>
+
+      <a href="/2020/02/24/vim%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E7%AC%94%E8%AE%B0/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">vim实用技巧(第二版)笔记附件：Vim实用技巧（第2版）.pdf
+第零部分：认识vimvim对重复性操作进行了优化技巧1：. 命令能够让我们重复上次修改是Vim中最为强大的多面手技巧2：一边移动一边重复，通过普通模式的移动指令可以实现行首行尾的重复修改技巧3：以退为进，构造可重复的修改。例如在+号两边加上引号，可以s命令替换为” + “，虽然第一次指令偏多，但可重复。技巧4：可重复操作和回退指令
+
+
+
+目的
+操作
+重复
+回退
+
+
+
+做出一个修改
+{edit}
+.
+u
+
+
+在行内查找下个字符
+f{char}/t{char}
+;
+,
+
+
+在行内查找上个字符
+F{char}/T{char}
+;
+,
+
+
+文档中查找下个
+/pattern
+n
+N
+
+
+文档中查找上个
+?pattern
+n
+N
+
+
+替换
+:s/target/replacement
+&amp;
+u
+
+
+执行一系列修改
+qx{changes}q
+@x
+u
+
+
+技巧5：文档搜索快捷键文档中查找下个：*文档中查找上个：#技巧6：总结
+第一部分：模式</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-24&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/vim">vim</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2020/02/24/%E6%9E%81%E7%AE%80%E7%94%9F%E6%B4%BB/">
+        <p class="h4 index-header">极简生活</p>
+      </a>
+
+      <a href="/2020/02/24/%E6%9E%81%E7%AE%80%E7%94%9F%E6%B4%BB/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">极简生活衣物篇
+
+
+季节
+夏天
+春秋
+初冬
+深冬
+
+
+
+工作上衣
+制服短袖×2
+西服外套
+制服长袖×3
+
+
+
+生活上衣
+短袖衫×2
+休闲西服+风衣
+毛线衣+厚外套
+棉袄×2
+
+
+内裤
+内裤×3
+
+
+
+
+
+工作裤
+制服长裤×2秋裤×2
+
+
+
+
+
+生活裤
+短裤×2
+
+运动长裤
+
+
+
+袜子
+短袜×3
+
+
+
+
+
+工作鞋
+皮鞋×2
+
+
+
+
+
+生活鞋
+运动鞋×2
+
+
+
+
+
+辅助用品
+眼罩+午休枕围巾
+
+
+
+
+
+游泳服装
+泳帽+泳镜+泳裤
+
+
+
+
+
+随身用品
+
+
+电子设备
+清洁电子
+近视必备
+日用品
+脸部护理
+
+
+
+手机
+剃须刀
+眼镜
+梳子
+洗面奶
+
+
+耳机
+电动牙刷
+镜布
+指甲剪
+爽肤水
+
+
+U盘
+鼻毛器
+
+水杯
+精华乳
+
+
+
+
+
+雨伞
+防晒霜
+
+
+
+
+
+书包
+玻尿酸
+
+
+生活用品
+
+
+居家用品
+床上用品
+生活电子
+其他电器
+消耗品
+
+
+
+凉拖鞋
+枕头+枕套×2
+电脑
+台灯
+垃圾袋
+
+
+棉拖鞋
+被单×2
+鼠标
+路由器+wifi放大器
+洗衣液/凝珠
+
+
+垃圾桶
+空调被
+显示屏
+取卡器
+牙膏
+
+
+取暖器
+棉被+被套
+扩展坞
+螺丝刀
+洗发水
+
+
+
+床垫若干
+排插若干
+剪刀
+肥皂/沐浴露
+
+
+
+电热毯
+
+</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-24&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E7%94%9F%E6%B4%BB">生活</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E9%9A%8F%E7%AC%94">随笔</a>&nbsp;
+          
+            <a href="/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89">极简主义</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2019/09/24/%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%88%91%E7%9C%8B%E8%BF%87%E7%9A%84%E5%B0%8F%E8%AF%B4/">
+        <p class="h4 index-header">那些年我看过的小说</p>
+      </a>
+
+      <a href="/2019/09/24/%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%88%91%E7%9C%8B%E8%BF%87%E7%9A%84%E5%B0%8F%E8%AF%B4/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">那些年我看过的网络小说玄幻
+
+
+东方玄幻
+修真文明
+洪荒神话
+
+
+
+架空幻想体系，文化上接近中华文化
+完整的修炼体系，借鉴修仙体系
+以中国古神话为框架，以成圣为目标
+
+
+《神墓》《星辰变》
+《凡人修仙传》《仙逆》
+《佛本是道》
+
+
+魔幻
+
+
+剑与魔法
+史诗奇幻
+巫师、位面
+架空大陆
+
+
+
+以法师和骑士为主，以领悟法则或信仰成神为目标
+西方幻想系统，以领主或相似身份影响世界
+脱胎于法师流派，融入实验精神，以位面法则为目标
+自定修炼体系，以西方文化为主的生活方式
+
+
+《恶魔法则》《罪恶之城》
+《恶魔狂想曲之明日骄阳》《低维游戏》
+《巫师世界》《巫师之旅》《巫界术士》《巫师传奇之旅》《异界巫师路》
+《异世之王者无双》
+
+
+武侠和仙侠
+
+
+传统武侠
+仙侠
+
+
+
+以金庸、古龙为代表的传统武侠，快意恩仇
+借用修仙体系，但重点不在于修仙，而在于人物间的爱恨情仇
+
+
+《笑傲江湖》《神雕侠侣》《大唐双龙传》
+《诛仙》《剑来》《仙剑神曲》
+
+
+都市
+
+
+重生人生
+都市修炼(异能)
+职场小说
+灵气复苏
+黑道流
+
+
+
+莫名重生，但无其他异能或玄幻元素，过程为利用未来经验来实现完美人生
+主角获得超能力，通常为Y</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-09-24&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E7%94%9F%E6%B4%BB">生活</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E9%9A%8F%E7%AC%94">随笔</a>&nbsp;
+          
+            <a href="/tags/%E7%BD%91%E7%BB%9C%E5%B0%8F%E8%AF%B4">网络小说</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2019/08/24/%E6%9C%89%E6%AF%92%E7%9A%84%E9%80%BB%E8%BE%91/">
+        <p class="h4 index-header">有毒的逻辑</p>
+      </a>
+
+      <a href="/2019/08/24/%E6%9C%89%E6%AF%92%E7%9A%84%E9%80%BB%E8%BE%91/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">有毒的逻辑《有毒的逻辑》一书有感
+一.人的认知偏见
+大多数人宁愿觉得事情简单而不复杂
+希望自己的偏见得到证实
+想要体验其他人无法企及的“归属管”
+需要为自己的挫败精确指定背黑锅的假想敌
+
+二.感性语言
+
+
+类型
+表面
+背后问题
+
+
+
+诉诸怜悯
+展示受难儿童照片，请求人们捐钱
+人们捐助的钱是否被用于慈善？
+
+
+诉诸罪恶感
+你们衣食无忧，比起全世界挨饿的人，你们心安理得
+1.任何人无权践踏情感天平  2.这种推测毫无证据
+
+
+诉诸恐惧
+如果你不做X，那么Y会发生
+应当提供充足的理由以证明
+
+
+诉诸希望
+彩票的宣传
+发生的概率没有说明
+
+
+诉诸地位
+XXX品牌展现你独一无二的品味
+企图用产品代表地位
+
+
+诉诸潮流
+XXX都在使用我们的产品，你…
+引领从众趋势
+
+
+诉诸信任、友情
+要么与我同一阵线，要么与我为敌
+混淆了友情、信任与这个事件的关系
+
+
+诉诸自豪、忠诚
+如果你真的为祖国自豪，那就做…
+问题是不做也不意味不爱国
+
+
+诉诸真诚
+我相信，我坚定地相信，XXX非常有必要
+利用副词和形容色彩词语来宣传
+
+
+诉诸群众
+美国人是热爱正义、主张人类尊严的人，我们要…
+引起人们的共鸣
+
+
+感性语言的</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-24&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E7%94%9F%E6%B4%BB">生活</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E8%AF%BB%E5%90%8E%E6%84%9F">读后感</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2019/03/24/%E4%BD%BF%E7%94%A8Linux%E6%A1%8C%E9%9D%A2%E7%89%88%E4%B9%8B%E8%B7%AF/">
+        <p class="h4 index-header">使用Linux桌面版之路</p>
+      </a>
+
+      <a href="/2019/03/24/%E4%BD%BF%E7%94%A8Linux%E6%A1%8C%E9%9D%A2%E7%89%88%E4%B9%8B%E8%B7%AF/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">使用Linux桌面版之路不知不觉我使用Linux已经超过了三年，这三年我从大一的懵懂新手成了一个能够手动安装图形界面的熟练使用者了。一年前我以为自己不会再折腾了，写了一篇文章作为总结，但是没想到这还不是结束，在寒假我折腾了archLinux半个月，将硬盘管理、挂载、xorg、驱动方面获得了一次提升。这估计是我最后一次总结了，大学已经将要结束，以后应该没那么多时间去折腾了。初识Linux08年时，我在六年级时家里买了电脑，那时候什么都不懂，只会玩玩4396小游戏。预装的趋势杀毒软件提示过期，我就傻乎乎的把他删除了，随后就是电脑中毒崩溃。没法子，只能找电脑店的员工上门维修，这点上联想的售后还是没得黑。不过所谓修电脑，其实就是利用联想自带的系统还原来重装系统，但对于当初的我还是很厉害的。
+
+后来我买了一张ghost光盘，那已经是初中了。利用那张光盘，我将家里的系统从崩溃中拯救出来，从此走上了折腾系统的不归路。不知从什么地方，我听说了Linux的历史，从此对这种自由的精神所吸引，但是在12年时的Linux实在难装，那时我还不会U盘启动，又是高三了，最终还是只能在虚拟机中一睹Linux的风采。艰</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-03-24&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E9%9A%8F%E7%AC%94">随笔</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2019/02/01/grub2%E5%88%B6%E4%BD%9C%E5%90%AF%E5%8A%A8%E7%9B%98/">
+        <p class="h4 index-header">grub2制作启动盘</p>
+      </a>
+
+      <a href="/2019/02/01/grub2%E5%88%B6%E4%BD%9C%E5%90%AF%E5%8A%A8%E7%9B%98/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">grub2启动盘安装必要软件debian系：
+
+安装必要包：sudo apt-get install grub-efi-amd64-bin grub-pc-bin安装bios启动：sudo grub-install --target=i386-pc --recheck --boot-directory=/tmp/sdb2/boot /dev/sdb安装uefi启动：sudo grub-install --target=x86_64-efi --efi-directory=/tmp/sdb2 --boot-directory=/tmp/sdb2/boot --removable
+
+arch系：
+pacman -S dosfstools grub efibootmgr os-prober
+添加微PE修改grub.cfg：
+insmod all_video
+
+menuentry &quot;WePE_bios&quot; {
+    ntldr /bootmgr
+    boot
+}
+
+menuentry &quot;WePE_uefi&quot; {
+    chainloader /EF</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-01&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/grub">grub</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2019/01/30/arch%E5%AE%89%E8%A3%85DDE%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/">
+        <p class="h4 index-header">arch安装DDE桌面环境</p>
+      </a>
+
+      <a href="/2019/01/30/arch%E5%AE%89%E8%A3%85DDE%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">安装DDE桌面环境1.安装显卡驱动和X服务器intel显卡驱动：pacman -S xf86-video-intel
+nvidia显卡驱动：pacman -S nvida
+安装xorg：pacman -S xorg-server
+2.DDE环境基本环境：pacman -S deepin deepin-extra lightdm
+相关软件：pacman -S file-roller evince unrar unzip p7zip
+色温调节：pacman -S redshift
+grub主题：pacman -S grub-theme-vimix
+修改lightdm配置文件：/etc/lightdm/lightdm.conf
+[Seat:*]
+...
+greeter-session=lightdm-deepin-greeter
+设置lightdm开机启动：systemctl enable lightdm
+设置网络管理器开机启动：systemctl enable NetworkManager
+修改grub主题配置文件：
+exfat文件系统支持：pacman -S exfat-utils
+3.</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-01-30&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/arch">arch</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2019/01/26/arch%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E7%AF%87/">
+        <p class="h4 index-header">arch安装基础篇</p>
+      </a>
+
+      <a href="/2019/01/26/arch%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E7%AF%87/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">安装基础篇archLinux安装教程写于2019年1月26日
+
+本人实验了基于BIOS模式下archlinux的安装2019年4月实验了EFI模式下archlinux的安装
+
+参考资料：
+1.安装 Arch Linux 记录——配置
+2.ArchLinux(BIOS引导)
+3.ArchLinux安装图文教程(EFI模式)
+4.ArchLinux安装、配置、美化和优化(gnome桌面)
+5.安装ArchLinux记录–配置(i3wm)
+1.连接网络无线网络：wifi-menu
+拨号：pppoe-setup
+测试网络：ping -c 3 www.baidu.com
+2.同步时间并编辑国内源同步时间：timedatectl set-ntp true
+编辑镜像站文件：vim /etc/pacman.d/mirrorlist
+将China下网址复制到最开头
+更新软件仓库：pacman -Syy
+3.查看启动类型和分区检查引导方式：
+
+ls /sys/firmware/efi/efivars
+
+若无该文件，则处于BIOS启动模式，反之EFI模式
+BIOS模式：
+分区：
+
+/boot分区，至少200</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-01-26&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/arch">arch</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2018/09/24/git%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/">
+        <p class="h4 index-header">git基础笔记</p>
+      </a>
+
+      <a href="/2018/09/24/git%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">Git参考书籍：git书籍
+一.初始配置git config –global user.name ‘yourName’
+git config –global user.email yourEmail
+git config –list
+二.git基本操作
+三.版本操作
+四.日志管理log4.1 显示方式（加粗表示最常用)
+
+
+选项
+说明
+
+
+
+-p
+补丁格式显示差异
+
+
+–stat
+更新文件统计
+
+
+–name–status
+显示文件变化
+
+
+–graph
+图形显示分支
+
+
+–pretty
+以其他格式显示，如oneline、format
+
+
+–abbrev-commit
+显示简略SHA-1编号，也就是id号
+
+
+–oneline
+简略显示(–pretty=oneline –abbrev-commit)
+
+
+注：format格式祥见参考资料。
+4.2 条件筛选
+
+
+选项
+说明
+
+
+
+–grep
+正则搜索
+
+
+–author
+作者搜索
+
+
+–committer
+提交者搜索
+
+
+–all-match
+多条件都满足才显示
+
+
+–no-merges
+不显示合并操作历史
+
+
+4.3 时间筛选
+
+
+选</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-09-24&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/git">git</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a href="/2018/08/24/%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%9C%8B%E8%B5%B7%E6%9D%A5%E5%BE%88%E5%8A%AA%E5%8A%9B/">
+        <p class="h4 index-header">你只是看起来很努力</p>
+      </a>
+
+      <a href="/2018/08/24/%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%9C%8B%E8%B5%B7%E6%9D%A5%E5%BE%88%E5%8A%AA%E5%8A%9B/">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">你只是看起来很努力《你只是看起来很努力》书籍摘要
+愿有人陪你颠沛流离作者　卢思浩
+10年时我在日记里写：**“我们之所以会觉得焦虑，无非是因为现在的自己和想象中的自己，很有距离。”而我们离想象中的自己越来越远，很大程度上都是因为我们在一点点地辜负自己。**
+
+关于焦虑，我发现我们或多或少地都陷入了一个怪圈，这个怪圈叫：我们看似忙碌，实则焦虑。我们总是心血来潮想学习，于是买了很多单词书，再也没有翻开过；我们总是备受刺激想健身，于是找了很多攻略，再也没有动过；我们总是信誓旦旦要读书，于是买了很多书，再也没有打开过。
+
+我们总是花很多时间在社交网络上，把认为有用的东西另存为，直到你的硬盘存满了资料，你还是没有看过。
+
+我们忙碌，可我们却没有真的去了解那些自己精挑细选留下的内容。我们花时间收集，却忘了最重要的其实是花时间去消化。
+
+你说你想要当自由撰稿人，可从不见你努力写稿；你说你想考研，可从不见你背单词做题；你看到学霸时嗤之以鼻说这样活着没意思；你看到有人旅行又不屑一顾地说这只是随大流。**我开始怀疑你挂在嘴边的是不是逃避现实的借口，我开始怀疑你是不是在一遍遍地逃避和自我安慰中变得惴惴不安。</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-08-24&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E7%94%9F%E6%B4%BB">生活</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E8%AF%BB%E5%90%8E%E6%84%9F">读后感</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <nav aria-label="index posts navigation">
+    <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-double-right"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByClassName("page-number")) {
+      ele.href += '#board';
+    }
+  </script>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv"></span>总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv"></span>总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人&nbsp;
+  
+  <br>
+
+
+
+    
+
+
+    <!-- cnzz Analytics icon -->
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+
+
+  <script src="/lib/smoothscroll/SmoothScroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  <!-- cnzz Analytics -->
+  
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

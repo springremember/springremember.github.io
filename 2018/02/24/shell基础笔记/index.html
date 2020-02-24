@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="我的博客">
+  <meta name="author" content="spring">
+  <meta name="keywords" content="github">
+  <title>shell基础笔记 ~ spring&#39;s blog</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>spring's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" false
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期六, 二月 24日 2018, 8:54 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    568 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      2 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1 id="shell编程基础"><a href="#shell编程基础" class="headerlink" title="shell编程基础"></a>shell编程基础</h1><h3 id="一-查看命令信息-type"><a href="#一-查看命令信息-type" class="headerlink" title="一.查看命令信息(type)"></a>一.查看命令信息(type)</h3><h3 id="二-变量"><a href="#二-变量" class="headerlink" title="二.变量"></a>二.变量</h3><table>
+<thead>
+<tr>
+<th>变量操作</th>
+<th>变量定义和增加</th>
+<th>变量内容删除</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>显示：echo</td>
+<td>一个变量(同编程语言)</td>
+<td>${变量#关键字}： 从头到尾，符合关键字最短的删除</td>
+</tr>
+<tr>
+<td>取消：unset</td>
+<td>变量数组</td>
+<td>${变量##关键字}： 从头到尾，符合关键字最长的删除</td>
+</tr>
+<tr>
+<td>要求输入：read</td>
+<td>例如：PATH=${PATH}:/home/bin</td>
+<td>${变量%/%%关键字}： 从尾到头，符合关键字最短/长的删除</td>
+</tr>
+</tbody></table>
+<p>变量替换：<img src="/2018/02/24/shell%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/00.png" srcset="/img/loading.gif" alt="变量替换.jpg"></p>
+<h3 id="三-环境变量"><a href="#三-环境变量" class="headerlink" title="三.环境变量"></a>三.环境变量</h3><table>
+<thead>
+<tr>
+<th>基础指令</th>
+<th>登录和欢迎信息文件</th>
+<th>系统配置文件(开机)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>declare 直接显示环境变量 -x(化某一变量为全局变量)</td>
+<td>/etc/issue</td>
+<td>系统配置文件：/etc/profile</td>
+</tr>
+<tr>
+<td>locale 查看语系</td>
+<td>/etc/issue.net</td>
+<td>个人配置文件：~/.bash_profile</td>
+</tr>
+<tr>
+<td>ulimit(user limit)用户使用限制</td>
+<td>/etc/motd(公告)</td>
+<td>无登录配置文件：~/.bashrc</td>
+</tr>
+<tr>
+<td>alias/ualias：别名设置</td>
+<td></td>
+<td>sourch：读取配置</td>
+</tr>
+</tbody></table>
+<h3 id="四-通配符"><a href="#四-通配符" class="headerlink" title="四.通配符"></a>四.通配符</h3><table>
+<thead>
+<tr>
+<th>*</th>
+<th>?</th>
+<th>[]</th>
+<th>[ - ]</th>
+<th>[ ^ ]</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0或无穷个任意字符</td>
+<td>绝对一个字符</td>
+<td>集合内任一字符</td>
+<td>某一范围字符</td>
+<td>不在某集合内</td>
+</tr>
+</tbody></table>
+<h3 id="五-条件和管道"><a href="#五-条件和管道" class="headerlink" title="五.条件和管道"></a>五.条件和管道</h3><table>
+<thead>
+<tr>
+<th>命令回传码</th>
+<th>&amp;&amp;</th>
+<th>&#124;&#124;</th>
+<th>&#124;(管道)</th>
+<th>-(使用前面的输出)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>前一条命令的执行结果</td>
+<td>和</td>
+<td>或</td>
+<td>不解释</td>
+<td>tar -cvf - /home &#124; tar -xvf -</td>
+</tr>
+</tbody></table>
+<h3 id="六-信息处理"><a href="#六-信息处理" class="headerlink" title="六.信息处理"></a>六.信息处理</h3><table>
+<thead>
+<tr>
+<th>选取</th>
+<th>排序</th>
+<th>统计</th>
+<th>字符删除和替换</th>
+<th>tab和空格转化</th>
+<th>行合并</th>
+<th>传递参数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cut：每一行进行处理，类似字符串操作</td>
+<td>sort</td>
+<td>wc</td>
+<td>tr</td>
+<td>expand</td>
+<td>join：相同两行合并</td>
+<td>xargs：将输入的信息作为参数给后面命令</td>
+</tr>
+<tr>
+<td>grep：查找包含特定字符的行</td>
+<td>uniq(去除重复)</td>
+<td></td>
+<td></td>
+<td>unexpand</td>
+<td>paste：直接合并两行并中间tab隔开</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="七-正则表达式"><a href="#七-正则表达式" class="headerlink" title="七.正则表达式"></a>七.正则表达式</h3><table>
+<thead>
+<tr>
+<th>特殊区间</th>
+<th>基本正则字符</th>
+<th>基本正则集合</th>
+<th>常用工具</th>
+<th>扩展的正则公式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[:alnum:]英文字母和数字</td>
+<td>^word 行首查找</td>
+<td>[list] 集合</td>
+<td>grep</td>
+<td>+ 重复一个或一个以上前面字符</td>
+</tr>
+<tr>
+<td>[:alpha:]英文字母</td>
+<td>word$ 行尾查找</td>
+<td>[n1-n2] 范围集合</td>
+<td>egrep=grep -E</td>
+<td>? 零个或一个前面字符</td>
+</tr>
+<tr>
+<td>[:upper:]</td>
+<td>.  一个任意字符</td>
+<td>[^list] 反向选择</td>
+<td>sed工具</td>
+<td>&#124; or</td>
+</tr>
+<tr>
+<td>[:lower:]</td>
+<td>\  转义字符</td>
+<td>\{n,m\} 指定数量重复字符</td>
+<td>awk 用于将行分段处理</td>
+<td>() 组字符</td>
+</tr>
+<tr>
+<td>[:diger:]</td>
+<td>*  任意多个字符</td>
+<td></td>
+<td></td>
+<td>()+ 重复组字符</td>
+</tr>
+</tbody></table>
+<h3 id="八-语法和执行"><a href="#八-语法和执行" class="headerlink" title="八.语法和执行"></a>八.语法和执行</h3><p><img src="/2018/02/24/shell%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/01.jpeg" srcset="/img/loading.gif" alt="shellScript.jpg"></p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Linux">Linux</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E9%B8%9F%E5%93%A5Linux%E7%A7%81%E6%88%BF%E8%8F%9C">鸟哥Linux私房菜</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv"></span>总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv"></span>总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人&nbsp;
+  
+  <br>
+
+
+
+    
+
+
+    <!-- cnzz Analytics icon -->
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smoothscroll/SmoothScroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  <!-- cnzz Analytics -->
+  
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "shell基础笔记&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

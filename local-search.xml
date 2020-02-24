@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>vim实用技巧笔记</title>
+    <link href="/2020/02/24/vim%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E7%AC%94%E8%AE%B0/"/>
+    <url>/2020/02/24/vim%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="vim实用技巧-第二版-笔记"><a href="#vim实用技巧-第二版-笔记" class="headerlink" title="vim实用技巧(第二版)笔记"></a>vim实用技巧(第二版)笔记</h1><p>附件：Vim实用技巧（第2版）.pdf</p><h1 id="第零部分：认识vim"><a href="#第零部分：认识vim" class="headerlink" title="第零部分：认识vim"></a>第零部分：认识vim</h1><p><strong>vim对重复性操作进行了优化</strong><br>技巧1：. 命令能够让我们<strong>重复上次修改</strong>是Vim中最为强大的多面手<br>技巧2：一边移动一边重复，通过普通模式的移动指令可以实现<strong>行首行尾</strong>的重复修改<br>技巧3：以退为进，构造可重复的修改。例如在+号两边加上引号，可以s命令替换为” + “，虽然第一次指令偏多，但可重复。<br>技巧4：可重复操作和回退指令</p><table><thead><tr><th><strong>目的</strong></th><th><strong>操作</strong></th><th><strong>重复</strong></th><th><strong>回退</strong></th></tr></thead><tbody><tr><td>做出一个修改</td><td>{edit}</td><td>.</td><td>u</td></tr><tr><td>在行内查找下个字符</td><td>f{char}/t{char}</td><td>;</td><td>,</td></tr><tr><td>在行内查找上个字符</td><td>F{char}/T{char}</td><td>;</td><td>,</td></tr><tr><td>文档中查找下个</td><td>/pattern<CR></CR></td><td>n</td><td>N</td></tr><tr><td>文档中查找上个</td><td>?pattern<CR></CR></td><td>n</td><td>N</td></tr><tr><td>替换</td><td>:s/target/replacement</td><td>&amp;</td><td>u</td></tr><tr><td>执行一系列修改</td><td>qx{changes}q</td><td>@x</td><td>u</td></tr></tbody></table><p>技巧5：文档搜索快捷键<br>文档中查找下个：*<br>文档中查找上个：#<br>技巧6：总结</p><h1 id="第一部分：模式"><a href="#第一部分：模式" class="headerlink" title="第一部分：模式"></a>第一部分：模式</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>vim</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>极简生活</title>
+    <link href="/2020/02/24/%E6%9E%81%E7%AE%80%E7%94%9F%E6%B4%BB/"/>
+    <url>/2020/02/24/%E6%9E%81%E7%AE%80%E7%94%9F%E6%B4%BB/</url>
+    
+    <content type="html"><![CDATA[<h1 id="极简生活"><a href="#极简生活" class="headerlink" title="极简生活"></a>极简生活</h1><h1 id="衣物篇"><a href="#衣物篇" class="headerlink" title="衣物篇"></a>衣物篇</h1><table><thead><tr><th align="center"><strong>季节</strong></th><th align="center"><strong>夏天</strong></th><th align="center"><strong>春秋</strong></th><th align="center"><strong>初冬</strong></th><th align="center"><strong>深冬</strong></th></tr></thead><tbody><tr><td align="center"><strong>工作上衣</strong></td><td align="center">制服短袖×2</td><td align="center">西服外套</td><td align="center">制服长袖×3</td><td align="center"></td></tr><tr><td align="center"><strong>生活上衣</strong></td><td align="center">短袖衫×2</td><td align="center">休闲西服+风衣</td><td align="center">毛线衣+厚外套</td><td align="center">棉袄×2</td></tr><tr><td align="center"><strong>内裤</strong></td><td align="center">内裤×3</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>工作裤</strong></td><td align="center">制服长裤×2<br />秋裤×2</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>生活裤</strong></td><td align="center">短裤×2</td><td align="center"></td><td align="center">运动长裤</td><td align="center"></td></tr><tr><td align="center"><strong>袜子</strong></td><td align="center">短袜×3</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>工作鞋</strong></td><td align="center">皮鞋×2</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>生活鞋</strong></td><td align="center">运动鞋×2</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>辅助用品</strong></td><td align="center">眼罩+午休枕<br />围巾</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>游泳服装</strong></td><td align="center">泳帽+泳镜+泳裤</td><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table><h1 id="随身用品"><a href="#随身用品" class="headerlink" title="随身用品"></a>随身用品</h1><table><thead><tr><th><strong>电子设备</strong></th><th><strong>清洁电子</strong></th><th><strong>近视必备</strong></th><th><strong>日用品</strong></th><th><strong>脸部护理</strong></th></tr></thead><tbody><tr><td>手机</td><td>剃须刀</td><td>眼镜</td><td>梳子</td><td>洗面奶</td></tr><tr><td>耳机</td><td>电动牙刷</td><td>镜布</td><td>指甲剪</td><td>爽肤水</td></tr><tr><td>U盘</td><td>鼻毛器</td><td></td><td>水杯</td><td>精华乳</td></tr><tr><td></td><td></td><td></td><td>雨伞</td><td>防晒霜</td></tr><tr><td></td><td></td><td></td><td>书包</td><td>玻尿酸</td></tr></tbody></table><h1 id="生活用品"><a href="#生活用品" class="headerlink" title="生活用品"></a>生活用品</h1><table><thead><tr><th><strong>居家用品</strong></th><th><strong>床上用品</strong></th><th><strong>生活电子</strong></th><th><strong>其他电器</strong></th><th><strong>消耗品</strong></th></tr></thead><tbody><tr><td>凉拖鞋</td><td>枕头+枕套×2</td><td>电脑</td><td>台灯</td><td>垃圾袋</td></tr><tr><td>棉拖鞋</td><td>被单×2</td><td>鼠标</td><td>路由器+wifi放大器</td><td>洗衣液/凝珠</td></tr><tr><td>垃圾桶</td><td>空调被</td><td>显示屏</td><td>取卡器</td><td>牙膏</td></tr><tr><td>取暖器</td><td>棉被+被套</td><td>扩展坞</td><td>螺丝刀</td><td>洗发水</td></tr><tr><td></td><td>床垫若干</td><td>排插若干</td><td>剪刀</td><td>肥皂/沐浴露</td></tr><tr><td></td><td>电热毯</td><td></td><td></td><td>纸巾</td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+      <tag>极简主义</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>那些年我看过的小说</title>
+    <link href="/2019/09/24/%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%88%91%E7%9C%8B%E8%BF%87%E7%9A%84%E5%B0%8F%E8%AF%B4/"/>
+    <url>/2019/09/24/%E9%82%A3%E4%BA%9B%E5%B9%B4%E6%88%91%E7%9C%8B%E8%BF%87%E7%9A%84%E5%B0%8F%E8%AF%B4/</url>
+    
+    <content type="html"><![CDATA[<h1 id="那些年我看过的网络小说"><a href="#那些年我看过的网络小说" class="headerlink" title="那些年我看过的网络小说"></a>那些年我看过的网络小说</h1><h3 id="玄幻"><a href="#玄幻" class="headerlink" title="玄幻"></a>玄幻</h3><table><thead><tr><th>东方玄幻</th><th>修真文明</th><th>洪荒神话</th></tr></thead><tbody><tr><td>架空幻想体系，文化上接近中华文化</td><td>完整的修炼体系，借鉴修仙体系</td><td>以中国古神话为框架，以成圣为目标</td></tr><tr><td>《神墓》《星辰变》</td><td>《凡人修仙传》《仙逆》</td><td>《佛本是道》</td></tr></tbody></table><h3 id="魔幻"><a href="#魔幻" class="headerlink" title="魔幻"></a>魔幻</h3><table><thead><tr><th>剑与魔法</th><th>史诗奇幻</th><th>巫师、位面</th><th>架空大陆</th></tr></thead><tbody><tr><td>以法师和骑士为主，以领悟法则或信仰成神为目标</td><td>西方幻想系统，以领主或相似身份影响世界</td><td>脱胎于法师流派，融入实验精神，以位面法则为目标</td><td>自定修炼体系，以西方文化为主的生活方式</td></tr><tr><td>《恶魔法则》《罪恶之城》</td><td>《恶魔狂想曲之明日骄阳》《低维游戏》</td><td>《巫师世界》《巫师之旅》《巫界术士》《巫师传奇之旅》《异界巫师路》</td><td>《异世之王者无双》</td></tr></tbody></table><h3 id="武侠和仙侠"><a href="#武侠和仙侠" class="headerlink" title="武侠和仙侠"></a>武侠和仙侠</h3><table><thead><tr><th>传统武侠</th><th>仙侠</th></tr></thead><tbody><tr><td>以金庸、古龙为代表的传统武侠，快意恩仇</td><td>借用修仙体系，但重点不在于修仙，而在于人物间的爱恨情仇</td></tr><tr><td>《笑傲江湖》《神雕侠侣》《大唐双龙传》</td><td>《诛仙》《剑来》《仙剑神曲》</td></tr></tbody></table><h3 id="都市"><a href="#都市" class="headerlink" title="都市"></a>都市</h3><table><thead><tr><th>重生人生</th><th>都市修炼(异能)</th><th>职场小说</th><th>灵气复苏</th><th>黑道流</th></tr></thead><tbody><tr><td>莫名重生，但无其他异能或玄幻元素，过程为利用未来经验来实现完美人生</td><td>主角获得超能力，通常为YY文</td><td>以官场居多，也用黑客、老师等变体</td><td>以末法时代，灵气突然复苏为背景</td><td>由《坏蛋是怎样炼成的》开创</td></tr><tr><td>《重生之大涅槃》《俗人回档》</td><td>《升龙道》《猎户出山》</td><td>《盛世鸿图》</td><td>《这里有妖气》《恐怖复苏》</td><td>《坏蛋是怎样炼成的》</td></tr></tbody></table><h3 id="历史军事"><a href="#历史军事" class="headerlink" title="历史军事"></a>历史军事</h3><table><thead><tr><th>穿越历史</th><th>高魔历史</th><th>军事争霸</th></tr></thead><tbody><tr><td>穿越到历史中某一朝代，无玄幻要素，以明代为主</td><td>穿越到历史中某一时期，但是存在玄幻要素</td><td>在某一架空历史时期中的军事变迁</td></tr><tr><td>《摄政大明》《帝国的崛起》</td><td>《穷鬼的上下二千年》</td><td>《紫川》</td></tr></tbody></table><h3 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h3><table><thead><tr><th>虚拟游戏</th><th>游戏竞技</th></tr></thead><tbody><tr><td>以虚拟技术为基础，虚拟现实游戏</td><td>以竞技类网游为基本，重点在于竞技</td></tr><tr><td>《网游之圣枪苍穹》</td><td>《全职高手》《英雄联盟之谁与争锋》</td></tr></tbody></table><h3 id="科幻"><a href="#科幻" class="headerlink" title="科幻"></a>科幻</h3><table><thead><tr><th>无限流</th><th>生化类末日</th><th>外来文明入侵末日</th><th>数据化末日</th><th>物种进化</th><th>星空</th></tr></thead><tbody><tr><td>《无限恐怖》所开辟的无限流</td><td>以丧尸危机为主，通常借用生化危机设定</td><td>外来物种入侵，以虫族居多</td><td>通过数据化人类反抗末日</td><td>物种全面进化，人类反而进化缓慢</td><td>着眼于太空时代的科幻作品</td></tr><tr><td>《无限恐怖》《无限恐怖之轮回真相》《恐怖高校》《超弦空间》</td><td>《生化危机之终期黑城》</td><td>《甲壳狂潮》</td><td>《神魔系统》</td><td>《全球进化》</td><td>《地球纪元》《星空(沧月)》</td></tr></tbody></table><h3 id="悬疑灵异"><a href="#悬疑灵异" class="headerlink" title="悬疑灵异"></a>悬疑灵异</h3><table><thead><tr><th>刑侦小说</th><th>道术鬼神</th><th>风水相师</th><th>悬疑</th></tr></thead><tbody><tr><td>以案件为主线，主要是探案过程</td><td>以鬼怪为主，道士为特点</td><td>以风水为主，主要与人斗，并且大多为yy文</td><td>略带鬼怪，渲染恐怖氛围</td></tr><tr><td>《死亡通知书》《末日预言》</td><td>《冤鬼路》《轮回》《碎脸》</td><td></td><td>《地狱的第十九层》</td></tr></tbody></table><h3 id="言情"><a href="#言情" class="headerlink" title="言情"></a>言情</h3><table><thead><tr><th>青春校园</th><th>现代言情</th><th>古代言情</th><th>魔幻言情</th></tr></thead><tbody><tr><td>以校园(初高中)为背景，一般情节比较傲娇</td><td>以现实言情为蓝本，情节较为曲折</td><td>以古代或架空古代为背景，通常牵扯家族情仇</td><td>以神话或神魔为背景，强调身份带来的爱情难题</td></tr><tr><td>《天使街23号》《恶魔的法则》《校园至尊：王牌男友》《邪恶计划：过招美男团》《邪魅转校生：转身依然是你》《骑士少年：十字架的约定》</td><td>《一厘米的阳光》《第三种爱情》《千山暮雪》《微微一笑很倾城》《肥女的逆袭(花儿对我笑)》</td><td>《帝王业》《大漠谣》</td><td>《落花时节又逢君》《三生，忘川无殇》《烟雨倚重楼》《黑白灰姑娘》</td></tr></tbody></table><h3 id="综漫同人"><a href="#综漫同人" class="headerlink" title="综漫同人"></a>综漫同人</h3><table><thead><tr><th>哈利波特同人</th><th>红楼梦同人</th><th>综漫</th><th>变身文学</th></tr></thead><tbody><tr><td>如题</td><td>如题</td><td>以动漫人物为蓝本，带有一些动漫梗</td><td>通常为男变女，个人偏好嫁人</td></tr><tr><td>《哈利波特之天生反派》《哈利波特的防御术课教授》</td><td>《奋斗在红楼》</td><td>《魔王神官》《一人的无限恐怖》《终末之城》</td><td>《魔法学徒》《夜明珠》《变身女儿行》《好莱坞的秘密花园》《变身之女神养成计划》《重生之破茧(结尾在看书网，番外在贴吧)》《重生变身之初始》</td></tr></tbody></table><h3 id="励志文学"><a href="#励志文学" class="headerlink" title="励志文学"></a>励志文学</h3><p>《那些回不去的年少时光》</p><h3 id="再见，那些无忧无虑的小说时光"><a href="#再见，那些无忧无虑的小说时光" class="headerlink" title="再见，那些无忧无虑的小说时光"></a>再见，那些无忧无虑的小说时光</h3><pre><code>小学，从一本《神墓5》入坑。不知不觉，已经过去了10年。这十年我随着网络小说走过奇思妙想的发展时期，也走到了现在微创新多套路的成熟期。再翻阅网络小说时，已经找不到当初窝在被窝里用MP4看小说的感觉。也找不到当年二三天的废寝忘食只为看一本小说的感觉了；也找不到初中看言情的感动了。现在的我，只是机械的寻找名字看的过去的小说，然后一扫开头就开始跳看，也许是时候结束了，告别曾经。</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+      <tag>网络小说</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>有毒的逻辑</title>
+    <link href="/2019/08/24/%E6%9C%89%E6%AF%92%E7%9A%84%E9%80%BB%E8%BE%91/"/>
+    <url>/2019/08/24/%E6%9C%89%E6%AF%92%E7%9A%84%E9%80%BB%E8%BE%91/</url>
+    
+    <content type="html"><![CDATA[<h1 id="有毒的逻辑"><a href="#有毒的逻辑" class="headerlink" title="有毒的逻辑"></a>有毒的逻辑</h1><p>《有毒的逻辑》一书有感</p><h3 id="一-人的认知偏见"><a href="#一-人的认知偏见" class="headerlink" title="一.人的认知偏见"></a>一.人的认知偏见</h3><ol><li>大多数人宁愿觉得事情简单而不复杂</li><li>希望自己的偏见得到证实</li><li>想要体验其他人无法企及的“归属管”</li><li>需要为自己的挫败精确指定背黑锅的假想敌</li></ol><h3 id="二-感性语言"><a href="#二-感性语言" class="headerlink" title="二.感性语言"></a>二.感性语言</h3><table><thead><tr><th>类型</th><th>表面</th><th>背后问题</th></tr></thead><tbody><tr><td>诉诸怜悯</td><td>展示受难儿童照片，请求人们捐钱</td><td>人们捐助的钱是否被用于慈善？</td></tr><tr><td>诉诸罪恶感</td><td>你们衣食无忧，比起全世界挨饿的人，你们心安理得</td><td>1.任何人无权践踏情感天平  2.这种推测毫无证据</td></tr><tr><td>诉诸恐惧</td><td>如果你不做X，那么Y会发生</td><td>应当提供充足的理由以证明</td></tr><tr><td>诉诸希望</td><td>彩票的宣传</td><td>发生的概率没有说明</td></tr><tr><td>诉诸地位</td><td>XXX品牌展现你独一无二的品味</td><td>企图用产品代表地位</td></tr><tr><td>诉诸潮流</td><td>XXX都在使用我们的产品，你…</td><td>引领从众趋势</td></tr><tr><td>诉诸信任、友情</td><td>要么与我同一阵线，要么与我为敌</td><td>混淆了友情、信任与这个事件的关系</td></tr><tr><td>诉诸自豪、忠诚</td><td>如果你真的为祖国自豪，那就做…</td><td>问题是不做也不意味不爱国</td></tr><tr><td>诉诸真诚</td><td>我相信，我坚定地相信，XXX非常有必要</td><td>利用副词和形容色彩词语来宣传</td></tr><tr><td>诉诸群众</td><td>美国人是热爱正义、主张人类尊严的人，我们要…</td><td>引起人们的共鸣</td></tr></tbody></table><p>感性语言的本身没有什么错，人类采用感性语言作为手段以实现自己的目的，但是我们应当注意亲近之人以外的所有呼吁中是否存在类似问题。</p><p><strong>信息不平等(没有足够因果关系、没有足够证据)、谋求好处(宣传推销)、道德绑架(爱国)、使用带形容词色彩的词语却辩解自己理性</strong></p><p><strong>足够理由、背后目的、不带偏见</strong></p><h3 id="三-感性的宣传方式"><a href="#三-感性的宣传方式" class="headerlink" title="三.感性的宣传方式"></a>三.感性的宣传方式</h3><table><thead><tr><th>宣传方式</th><th>表现形式</th><th>问题</th></tr></thead><tbody><tr><td>随波逐流</td><td>大家都这么做</td><td>企图暗示群众的判断是正确的</td></tr><tr><td>不断重复</td><td>重复主题</td><td>不断加深信任</td></tr><tr><td>自信</td><td>自信的神态</td><td>人们喜欢支持胜利者</td></tr><tr><td>过度简单化</td><td>要么…，要么…</td><td>没有中间方案，极端化</td></tr><tr><td>污名辱骂</td><td>使用”标签”，直男癌</td><td>将名词形容词化</td></tr><tr><td>刻板印象</td><td>将某一行为或性格简化为品质</td><td>曲解他人品质</td></tr><tr><td>光芒万丈的泛泛而谈</td><td>使用假大空口号：让美国再次伟大</td><td>不提供政策，不会有错误</td></tr><tr><td>传递</td><td>香烟广告使用大好山河</td><td>传递香烟和文化的关系</td></tr><tr><td>代言</td><td>明星代言</td><td>暗示明星更有鉴赏力</td></tr><tr><td>平民化</td><td>我和你们一样…</td><td>拉近距离</td></tr><tr><td>无背景的统计数据</td><td>80%的人…</td><td>针对性的找人群调查</td></tr><tr><td>大数据</td><td>超过…的人选择…</td><td>这些人能代表大多数吗？</td></tr><tr><td>人为捏造的困难</td><td>坏人、替罪羊</td><td>夸大问题</td></tr><tr><td>彻底扭曲</td><td>使用片面数据、编造数据</td><td>作弊洗牌法</td></tr></tbody></table><p>需要认识到宣传鼓动的本质，拒绝任其摆布</p><h3 id="四-暗示"><a href="#四-暗示" class="headerlink" title="四.暗示"></a>四.暗示</h3><table><thead><tr><th>类型</th><th>表现形式</th><th>问题</th></tr></thead><tbody><tr><td>普通暗示</td><td>XXX很好用，很美</td><td>委婉表达内心渴望</td></tr><tr><td>挑选</td><td>考得怎么样？拿了90分。</td><td>就这一次分数并不能代表什么</td></tr><tr><td>措辞</td><td>贝蒂迟到了/贝蒂还未到达</td><td>语句带有感情判断</td></tr><tr><td>选词</td><td>官僚与办公室职员</td><td>名词带有感情色彩</td></tr><tr><td>并列</td><td>市长决定不再竞选与城市财政濒临破产</td><td>让人主观认为市长有责任</td></tr><tr><td>控制性措辞</td><td>你今晚不是真的想出门，对吧？</td><td>让人难以表达态度</td></tr></tbody></table><h3 id="五-与主题无关"><a href="#五-与主题无关" class="headerlink" title="五.与主题无关"></a>五.与主题无关</h3><table><thead><tr><th>类型</th><th>表现形式</th><th>问题</th></tr></thead><tbody><tr><td>人身攻击</td><td>对人不对事</td><td></td></tr><tr><td>牵连有罪</td><td>根据人的背景来判断</td><td></td></tr><tr><td>互相推诿：你也一样</td><td>你也有错</td><td></td></tr><tr><td>互相推诿：反质疑</td><td>你有证据吗？回：你有反例吗？</td><td></td></tr><tr><td>诉诸无知</td><td>你无法证明，你的观点是错的</td><td></td></tr><tr><td>诉诸权威</td><td>截取名人名言，但可能不是一个意思</td><td></td></tr><tr><td>先验性</td><td>我敢肯定、我听说、其他人认为</td><td></td></tr><tr><td>诉诸信仰</td><td>我知道你为什么反对你，你就是个反女权主义者</td><td></td></tr></tbody></table><h3 id="六-分散注意力"><a href="#六-分散注意力" class="headerlink" title="六.分散注意力"></a>六.分散注意力</h3><p>红鲱鱼：通过冲突性语言(辱骂、反对)改变话题或幽默方式(词语不同意思)转移话题</p><p>稻草人：从对方观点强行推理，例如对方同意警察有权强行进入暗藏罪犯的地方。那么，扩展这个观点到极权社会，警察能够随意闯入私人家庭的危害。通过这个方式，可以将对手观点简单化、谬论化。</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>a.要警惕任何使用<strong>绝对口吻</strong>说话的人：他们使用这样的词语，所有、没有、没人、从来没有、总是、每个人、必须、一……就……他们谈到一群人时仿佛所有成员都具有同样的特征、信念或态度。</p><p>b.要<strong>警惕一概而论</strong>，尤其是没有支撑的一概而论，或者只有一两个特定的、不常见的或极端的例子支撑的以偏概全。</p><p>c.要警惕所有使用<strong>感性语言</strong>、主观评价性语言而不考虑客观情况和事实的人。</p><p>d.不要把意见、态度、个人偏见、推测、个人保证或无支撑的一概而论与真凭实据混淆。</p><p>e.确定所讨论的<strong>问题清晰而明确</strong>，它的盘根错节与复杂性都已确认无误，它的目标已经确认无误，并且语言和概念已经做好定义。</p><p>f.确定<strong>证据与所讨论的特定主题相关</strong>，而不是与某些有关联的主题相关。</p><p>g.当提到权威时，<strong>不要自动承认权威</strong>，除非他/它的资格与所讨论的问题有关。</p><p>h.确保结论是由证据推断而来。</p><p>i.确保你没有置他人于不得不做推测的境地，确保自己没有处于不得不做推测的境地。换而言之，确保论证的必要步骤没有省略，避免做出假设。</p><p>j.无论何时，不要让理性的讨论变成激烈的争论。当讨论变得激烈之后，停止讨论，<strong>确定问题的根源，澄清所有误解，然后将讨论重新带回主题</strong>。当人们有不同意见时，确保他们知道意见分歧的具体性质。</p><p>k.确保证据是完整的，而不是有选择性的。</p><p>l.不要诡辩，不要为争论而争论。</p><p>m.严谨地思考。不要不假思索地放过谬误；即使你不说什么，也要对自己说“这是荒谬的”。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>读后感</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>使用Linux桌面版之路</title>
+    <link href="/2019/03/24/%E4%BD%BF%E7%94%A8Linux%E6%A1%8C%E9%9D%A2%E7%89%88%E4%B9%8B%E8%B7%AF/"/>
+    <url>/2019/03/24/%E4%BD%BF%E7%94%A8Linux%E6%A1%8C%E9%9D%A2%E7%89%88%E4%B9%8B%E8%B7%AF/</url>
+    
+    <content type="html"><![CDATA[<h1 id="使用Linux桌面版之路"><a href="#使用Linux桌面版之路" class="headerlink" title="使用Linux桌面版之路"></a>使用Linux桌面版之路</h1><pre><code>不知不觉我使用Linux已经超过了三年，这三年我从大一的懵懂新手成了一个能够手动安装图形界面的熟练使用者了。一年前我以为自己不会再折腾了，写了一篇文章作为总结，但是没想到这还不是结束，在寒假我折腾了archLinux半个月，将硬盘管理、挂载、xorg、驱动方面获得了一次提升。这估计是我最后一次总结了，大学已经将要结束，以后应该没那么多时间去折腾了。</code></pre><h4 id="初识Linux"><a href="#初识Linux" class="headerlink" title="初识Linux"></a>初识Linux</h4><pre><code>08年时，我在六年级时家里买了电脑，那时候什么都不懂，只会玩玩4396小游戏。预装的趋势杀毒软件提示过期，我就傻乎乎的把他删除了，随后就是电脑中毒崩溃。没法子，只能找电脑店的员工上门维修，这点上联想的售后还是没得黑。不过所谓修电脑，其实就是利用联想自带的系统还原来重装系统，但对于当初的我还是很厉害的。后来我买了一张ghost光盘，那已经是初中了。利用那张光盘，我将家里的系统从崩溃中拯救出来，从此走上了折腾系统的不归路。不知从什么地方，我听说了Linux的历史，从此对这种自由的精神所吸引，但是在12年时的Linux实在难装，那时我还不会U盘启动，又是高三了，最终还是只能在虚拟机中一睹Linux的风采。</code></pre><h4 id="艰难的初学者之路"><a href="#艰难的初学者之路" class="headerlink" title="艰难的初学者之路"></a>艰难的初学者之路</h4><pre><code>不知不觉我进入了大学，由于自身兴趣，我选择了计算机系。我本以为大学会有Linux的课程，但是没想到反而很多课程的软件只有Windows版本的。那是15年，Windows10出世了，一开始我是很喜欢这个全新的Windows，优雅而又一脉相承的界面风格。但是随即我被其捆绑的大量软件所恶心到了，再加上进度提示成迷的更新，以及臃肿的VS。让我再也爱不起这个我用了8年的系统，也让我燃起了使用Linux的热情。在这里不得不吐槽，我们学校的校园网只有Windows版本，连IOS的都没有。尝试了几次Ubuntu之后，我被没有网络和Ubuntu简陋的见面所劝退。终于在大二下，校园网转为拨号网络，并且Windows下GCC的安装简直缓慢，我终于下定决心转到Linux。之后就是不停的换用发行版，Ubuntu、麒麟系统、centos，最后选择了deepin这个界面上无可挑剔的发行版。但问题来了，界面过于方便，导致我很少使用命令。为了记住命令我看了三遍《鸟哥私房菜：基础篇》，做了二次笔记，看了一个视频教程。并且Linux表面上指令安装，但其实软件包名字还是自己寻找，一开始不会用debian的wiki都找不到软件用。安装个jdk都花了好几天，这样的折腾一度让我怀疑自己，这真的是我想要的吗？</code></pre><h4 id="疯狂一次，极客到底"><a href="#疯狂一次，极客到底" class="headerlink" title="疯狂一次，极客到底"></a>疯狂一次，极客到底</h4><pre><code>此时我面临两个选择，回到Windows，一切都是熟悉的样子；第二死磕Linux，为了自由和开源的精神。在大二下，我选择了死磕到底。为了更好的使用命令，我不再使用图形的文件管理器，并且开始疯狂逼自己使用vim并且自学vimscrip。在使用一个月后，我终于能够在Linux完成日常工作了。接下来就是git，无人不知的开源社区。看了两本关于git的书，和一遍视频教程，做了两次笔记之后，终于能够将工作文件保存到git上了。这个过程中，我不断被劝退，被各种命令劝退，也看到了王垠的文章，对是否坚持Linux产生了怀疑。但是最后我还是选择坚持Linux，并且也获得了成长。vim模式让我写代码效率得到了提高，命令行让我能够从底层学习语言的实现，并让我对计算机更有兴趣了。</code></pre><h4 id="折腾不止"><a href="#折腾不止" class="headerlink" title="折腾不止"></a>折腾不止</h4><pre><code>从这时候开始，我就开始了无限折腾发行版本之路。最后arch让我成长了，从磁盘管理开始到图形界面安装和切换，从服务管理到配置文件和日志管理。但是最后我还是放弃了arch，它过于激进的更新策略和不稳定性并不符合我的口味，我还是更喜欢debian系列的稳定和易用，但是archwiki是真的厉害。兜兜转转，在尝试了gnome、kde、xfce4、i3wm之后，我还是回到了deepin。原来一切都在最初的时候注定，我在各种发行版流浪一圈后还是回到了这里。</code></pre><h4 id="给新手的路线"><a href="#给新手的路线" class="headerlink" title="给新手的路线"></a>给新手的路线</h4><ol><li>在虚拟机中使用Linux，过一遍鸟哥的书，不求记住所有，只要有点印象</li><li>在虚拟机中安装archlinux，建议看着archwiki进行操作，安装几遍后磁盘管理和用户管理都熟悉了</li><li>虚拟机archlinux不安装图形界面，直接使用vim写C语言，坚持几周</li><li>在命令行中使用git，保存你的代码和笔记</li><li>安装Jdk，熟悉系统环境的配置，并理解系统目录</li><li>真机安装deepin，尽量多使用deepin做开发</li><li>最后使用arch作为最终系统，安装deepin桌面环境</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>grub2制作启动盘</title>
+    <link href="/2019/02/01/grub2%E5%88%B6%E4%BD%9C%E5%90%AF%E5%8A%A8%E7%9B%98/"/>
+    <url>/2019/02/01/grub2%E5%88%B6%E4%BD%9C%E5%90%AF%E5%8A%A8%E7%9B%98/</url>
+    
+    <content type="html"><![CDATA[<h1 id="grub2启动盘"><a href="#grub2启动盘" class="headerlink" title="grub2启动盘"></a>grub2启动盘</h1><h3 id="安装必要软件"><a href="#安装必要软件" class="headerlink" title="安装必要软件"></a>安装必要软件</h3><p>debian系：</p><blockquote><p>安装必要包：<code>sudo apt-get install grub-efi-amd64-bin grub-pc-bin</code><br>安装bios启动：<code>sudo grub-install --target=i386-pc --recheck --boot-directory=/tmp/sdb2/boot /dev/sdb</code><br>安装uefi启动：<code>sudo grub-install --target=x86_64-efi --efi-directory=/tmp/sdb2 --boot-directory=/tmp/sdb2/boot --removable</code></p></blockquote><p>arch系：</p><p><code>pacman -S dosfstools grub efibootmgr os-prober</code></p><h3 id="添加微PE"><a href="#添加微PE" class="headerlink" title="添加微PE"></a>添加微PE</h3><p>修改grub.cfg：</p><pre><code class="bash">insmod all_videomenuentry &quot;WePE_bios&quot; {    ntldr /bootmgr    boot}menuentry &quot;WePE_uefi&quot; {    chainloader /EFI/BOOT/wEbootx64.efi}</code></pre><p>将wepe.iso解压到分区，并重命名efi文件(文件名冲突)</p><h3 id="添加arch启动项"><a href="#添加arch启动项" class="headerlink" title="添加arch启动项"></a>添加arch启动项</h3><p>将arch的iso文件拷贝到启动分区中：</p><p>参考archwiki中arch的启动参数修改grub.cfg：</p><pre><code class="shell">menuentry &quot;Archlinux-2013.05.01-dual.iso&quot; --class iso {  set isofile=&quot;/archives/archlinux-2013.05.01-dual.iso&quot;  set partition=&quot;6&quot;  loopback loop (hd0,$partition)/$isofile  linux (loop)/arch/boot/x86_64/vmlinuz archisolabel=ARCH_201305 img_dev=/dev/sda$partition img_loop=$isofile earlymodules=loop  initrd (loop)/arch/boot/x86_64/archiso.img}</code></pre><p>注意：1.启动时archisolabel        2.启动分区位置</p><h3 id="添加deepin启动项"><a href="#添加deepin启动项" class="headerlink" title="添加deepin启动项"></a>添加deepin启动项</h3><p>deepin的iso不能直接通过grub2启动，需要将deepin的iso完整解压到启动分区，注意冲突文件的处理。</p><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://blog.nanpuyue.com/2016/033.html" target="_blank" rel="noopener">基于 GRUB2 制作滋瓷 BIOS/UEFI 双模式 启动的 Linux/Windows 安装U盘</a></p><p><a href="https://blog.csdn.net/qq_42748849/article/details/81273703" target="_blank" rel="noopener">grub2各种手动命令引导教程</a></p><p><a href="https://www.cnblogs.com/f-ck-need-u/p/7094693.html" target="_blank" rel="noopener">grub2详解(翻译和整理官方手册)</a></p><h3 id="最终文件内容"><a href="#最终文件内容" class="headerlink" title="最终文件内容"></a>最终文件内容</h3><pre><code class="shell">insmod all_videomenuentry &quot;WePE_BIOS&quot; {    ntldr /bootmgr    boot}menuentry &quot;WePE_UEFI&quot; {    chainloader /EFI/BOOT/wEbootx64.efi}menuentry &quot;Archlinux-201905&quot; --class iso {  set isofile=&quot;/archlinux-2019.05.02-x86_64.iso&quot;  loopback loop (hd0,msdos2)/$isofile  linux (loop)/arch/boot/x86_64/vmlinuz archisolabel=ARCH_201905 img_dev=/dev/sdb2 img_loop=$isofile earlymodules=loop  initrd (loop)/arch/boot/x86_64/archiso.img}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>grub</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>arch安装DDE桌面环境</title>
+    <link href="/2019/01/30/arch%E5%AE%89%E8%A3%85DDE%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/"/>
+    <url>/2019/01/30/arch%E5%AE%89%E8%A3%85DDE%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</url>
+    
+    <content type="html"><![CDATA[<h1 id="安装DDE桌面环境"><a href="#安装DDE桌面环境" class="headerlink" title="安装DDE桌面环境"></a>安装DDE桌面环境</h1><h4 id="1-安装显卡驱动和X服务器"><a href="#1-安装显卡驱动和X服务器" class="headerlink" title="1.安装显卡驱动和X服务器"></a>1.安装显卡驱动和X服务器</h4><p>intel显卡驱动：<code>pacman -S xf86-video-intel</code></p><p>nvidia显卡驱动：<code>pacman -S nvida</code></p><p>安装xorg：<code>pacman -S xorg-server</code></p><h4 id="2-DDE环境"><a href="#2-DDE环境" class="headerlink" title="2.DDE环境"></a>2.DDE环境</h4><p>基本环境：<code>pacman -S deepin deepin-extra lightdm</code></p><p>相关软件：<code>pacman -S file-roller evince unrar unzip p7zip</code></p><p>色温调节：<code>pacman -S redshift</code></p><p>grub主题：<code>pacman -S grub-theme-vimix</code></p><p>修改lightdm配置文件：<code>/etc/lightdm/lightdm.conf</code></p><pre><code class="shell">[Seat:*]...greeter-session=lightdm-deepin-greeter</code></pre><p>设置lightdm开机启动：<code>systemctl enable lightdm</code></p><p>设置网络管理器开机启动：<code>systemctl enable NetworkManager</code></p><p>修改grub主题配置文件：</p><p>exfat文件系统支持：<code>pacman -S exfat-utils</code></p><h4 id="3-安装字体"><a href="#3-安装字体" class="headerlink" title="3.安装字体"></a>3.安装字体</h4><p><code>pacman -S wqy-microhei wqy-zenhei ttf-dejavu ttf-inconsolata</code></p><h4 id="4-包管理器设置-添加中国社区"><a href="#4-包管理器设置-添加中国社区" class="headerlink" title="4.包管理器设置(添加中国社区)"></a>4.包管理器设置(添加中国社区)</h4><p>添加中文社区：</p><p><code>echo &quot;[archlinuxcn]&quot; | sudo tee -a /etc/pacman.conf</code></p><p><code>echo &quot;Server = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch&quot; | sudo tee -a /etc/pacman.conf</code></p><p>更新软件仓库并安装社区密钥：<code>sudo pacman -Syy &amp;&amp; sudo pacman -S archlinuxcn-keyring</code></p><h4 id="5-配置输入法"><a href="#5-配置输入法" class="headerlink" title="5.配置输入法"></a>5.配置输入法</h4><p>安装fcitx：<code>pacman -S fcitx-im fcitx-configtool</code></p><p>安装谷歌拼音(搜狗由于fcitx-qt4被移除无法使用)：<code>pacman -S fcitx-googlepinyin</code></p><p>配置输入法：<code>~/.xprofile</code></p><blockquote><p>export GTK_IM_MODULE=fcitx<br>export QT_IM_MODULE=fcitx<br>export XMODIFIERS=@im=fcitx</p></blockquote><p>注意：请运行fcitx-configtool配置输入法，否则无法正常使用</p><h4 id="6-常用软件"><a href="#6-常用软件" class="headerlink" title="6.常用软件"></a>6.常用软件</h4><p>浏览器：<code>pacman -S google-chrome</code></p><p>WPS：<code>pacman -S wps-office ttf-wps-fonts</code></p><p>系统信息：<code>pacman -S neofetch</code></p><p>安装oh-my-zsh：<code>pacman -S git wget zsh</code>，之后百度oh-my-zsh安装</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>arch</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>arch安装基础篇</title>
+    <link href="/2019/01/26/arch%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E7%AF%87/"/>
+    <url>/2019/01/26/arch%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E7%AF%87/</url>
+    
+    <content type="html"><![CDATA[<h1 id="安装基础篇"><a href="#安装基础篇" class="headerlink" title="安装基础篇"></a>安装基础篇</h1><p>archLinux安装教程<br>写于2019年1月26日</p><blockquote><p>本人实验了基于BIOS模式下archlinux的安装<br>2019年4月实验了EFI模式下archlinux的安装</p></blockquote><p>参考资料：</p><p>1.<a href="https://www.jianshu.com/p/2c45c5b4c1ab" target="_blank" rel="noopener">安装 Arch Linux 记录——配置</a></p><p>2.<a href="https://blog.csdn.net/cristianojason/article/details/80033330" target="_blank" rel="noopener">ArchLinux(BIOS引导)</a></p><p>3.<a href="https://blog.csdn.net/r8l8q8/article/details/76516523" target="_blank" rel="noopener">ArchLinux安装图文教程(EFI模式)</a></p><p>4.<a href="https://www.cnblogs.com/bluestorm/p/5929172.html" target="_blank" rel="noopener">ArchLinux安装、配置、美化和优化(gnome桌面)</a></p><p>5.<a href="https://www.jianshu.com/p/2c45c5b4c1ab" target="_blank" rel="noopener">安装ArchLinux记录–配置(i3wm)</a></p><h3 id="1-连接网络"><a href="#1-连接网络" class="headerlink" title="1.连接网络"></a>1.连接网络</h3><p>无线网络：<code>wifi-menu</code></p><p>拨号：<code>pppoe-setup</code></p><p>测试网络：<code>ping -c 3 www.baidu.com</code></p><h3 id="2-同步时间并编辑国内源"><a href="#2-同步时间并编辑国内源" class="headerlink" title="2.同步时间并编辑国内源"></a>2.同步时间并编辑国内源</h3><p>同步时间：<code>timedatectl set-ntp true</code></p><p>编辑镜像站文件：<code>vim /etc/pacman.d/mirrorlist</code></p><p>将China下网址复制到最开头</p><p>更新软件仓库：<code>pacman -Syy</code></p><h3 id="3-查看启动类型和分区"><a href="#3-查看启动类型和分区" class="headerlink" title="3.查看启动类型和分区"></a>3.查看启动类型和分区</h3><p>检查引导方式：</p><blockquote><p><code>ls /sys/firmware/efi/efivars</code></p></blockquote><p>若无该文件，则处于BIOS启动模式，反之EFI模式</p><p>BIOS模式：</p><p>分区：</p><blockquote><p>/boot分区，至少200M，FAT32文件系统<br>swap分区，为内存大小，swap文件系统<br>其余按照Linux分区格式</p></blockquote><p>格式化：</p><blockquote><p>boot分区：mkfs.fat -F32 /dev/boot分区<br>mkswap /dev/swap分区<br>swapon /dev/swap分区<br>其余分区自行选择文件系统，例如ext4、xfs等</p></blockquote><p>挂载分区：</p><blockquote><p>根目录挂载：mount /dev/根分区 /mnt<br>创建相应目录并挂载分区，例如/boot<br>mkdir /mnt/boot<br>mount /dev/boot分区</p></blockquote><p>EFI模式：</p><p>分区：</p><blockquote><p>/boot/EFI分区，至少800M，文件系统FAT32<br>/swap分区，和内存一样大小，文件系统swap<br>其余按照Linux分区格式</p></blockquote><p>格式化：</p><blockquote><p>EFI分区：mkfs.fat -F32 /dev/EFI分区<br>mkswap /dev/swap分区<br>swapon /dev/swap分区<br>其余Linux，自行选择文件系统，例如ext4、xfs等</p></blockquote><p>挂载分区：</p><blockquote><p>挂载根分区：mount /dev/根分区<br>创建efi目录：mkdir -p /boot/EFI<br>挂载EFI：mount /dev/EFI分区  /boot/EFI</p></blockquote><h3 id="4-安装基本系统并切换"><a href="#4-安装基本系统并切换" class="headerlink" title="4.安装基本系统并切换"></a>4.安装基本系统并切换</h3><p>安装基本系统：<code>pacstrap -i /mnt base base-devel</code></p><p>解释：/mnt对应根目录，也就是之前挂载的根分区。base和base-devel是基本系统包</p><p>配置开机挂载文件(fstab)：<code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code></p><p>查看配置文件：<code>cat /mnt/etc/fstab</code></p><p>切换新系统：<code>arch-chroot /mnt</code></p><h3 id="5-vim和语系、时区设置并设置同步时间"><a href="#5-vim和语系、时区设置并设置同步时间" class="headerlink" title="5. vim和语系、时区设置并设置同步时间"></a>5. vim和语系、时区设置并设置同步时间</h3><p>安装vim：<code>pacman -S vim</code></p><p>编辑语系：<code>vim /etc/locale.gen</code></p><p>将en_US.UTF-8和zh_CN.UTF-8,前面#删除</p><p>使其有效：<code>locale-gen</code></p><p>新建<code>/etc/locale.conf</code>文件，添加内容：<code>LANG=en_US.UTF-8</code></p><p>时区设置(使用hwclock同步硬件时间)：</p><p><code>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</code></p><p><code>hwclock --systohc</code></p><h3 id="6-引导设置"><a href="#6-引导设置" class="headerlink" title="6.引导设置"></a>6.引导设置</h3><p>BIOS模式：</p><blockquote><p>安装检测启动项软件：<code>pacman -S os-prober</code><br>安装grub：<code>pacman -S grub</code><br>部署grub：<code>grub-install --target=i386-pc /dev/磁盘名(sda、sdb一类，不带数字)</code><br>生成配置文件：<code>grub-mkconfig -o /boot/grub/grub.cfg</code></p></blockquote><p>EFI模式：</p><blockquote><p>安装引导程序：<code>pacman -S dosfstools grub efibootmgr os-prober</code><br>部署grub：<code>grub-install --target=x86_64-efi --efi-directory=/boot/EFI --recheck</code><br>生成配置文件：<code>grub-mkconfig -o /boot/grub/grub.cfg</code></p></blockquote><h3 id="7-用户设置和配置sudo"><a href="#7-用户设置和配置sudo" class="headerlink" title="7.用户设置和配置sudo"></a>7.用户设置和配置sudo</h3><p>设置root密码：<code>passwd</code></p><p>安装sudo：<code>pacman -S sudo</code></p><p>新建用户：<code>useradd -m 你的用户名</code></p><p>设置新用户密码：<code>passwd 设置的用户名</code></p><p>配置sudo：</p><blockquote><p><code>visudo</code></p></blockquote><p>找到root ALL=(ALL)ALL</p><p>添加一行：你的用户名的群组(一般就是你的用户名)  ALL=(ALL)ALL</p><h3 id="8-开机联网-若使用deepin桌面可以跳过"><a href="#8-开机联网-若使用deepin桌面可以跳过" class="headerlink" title="8.开机联网(若使用deepin桌面可以跳过)"></a>8.开机联网(若使用deepin桌面可以跳过)</h3><p>网络管理安装：<code>pacman -S networkmanager</code></p><p>网络管理开机启动：<code>systemctl enable NetworkManager</code></p><p>有线连接开机启动：<code>systemctl enable dhcpcd</code></p><p>无线连接检测：<code>wifi-menu</code>，并按照提示安装需要软件包</p><h3 id="9-自行设置swap文件-可选"><a href="#9-自行设置swap文件-可选" class="headerlink" title="9.自行设置swap文件(可选)"></a>9.自行设置swap文件(可选)</h3><p>设置交换文件(可选)：</p><p>生成交换文件：<code>fallocate -l 大小(4G) /swapfile</code></p><p>更改权限：<code>chmod 600 /swapfile</code></p><p>格式化为swap：<code>mkswap /swapfile</code></p><p>启用交换文件：<code>swapon /swapfile</code></p><p>设置自动挂载：<code>vim /etc/fstab</code></p><p>最后一行添加：<code>/swapfile none swap defaults 0 0</code></p><p>至此，基本系统安装完毕，下面是桌面系统安装和常用软件配置。</p><p>请重启后继续。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>arch</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>git基础笔记</title>
+    <link href="/2018/09/24/git%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/"/>
+    <url>/2018/09/24/git%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>参考书籍：<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">git书籍</a></p><h3 id="一-初始配置"><a href="#一-初始配置" class="headerlink" title="一.初始配置"></a>一.初始配置</h3><p>git config –global user.name ‘yourName’</p><p>git config –global user.email yourEmail</p><p>git config –list</p><h3 id="二-git基本操作"><a href="#二-git基本操作" class="headerlink" title="二.git基本操作"></a>二.git基本操作</h3><p><img src="/2018/09/24/git%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/01.jpeg" srcset="/img/loading.gif" alt="01_git基本操作 .jpg"></p><h3 id="三-版本操作"><a href="#三-版本操作" class="headerlink" title="三.版本操作"></a>三.版本操作</h3><p><img src="/2018/09/24/git%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/02.jpeg" srcset="/img/loading.gif" alt="02_git版本库操作.jpg"></p><h3 id="四-日志管理log"><a href="#四-日志管理log" class="headerlink" title="四.日志管理log"></a>四.日志管理log</h3><h4 id="4-1-显示方式（加粗表示最常用"><a href="#4-1-显示方式（加粗表示最常用" class="headerlink" title="4.1 显示方式（加粗表示最常用)"></a>4.1 显示方式（加粗表示最常用)</h4><table><thead><tr><th>选项</th><th>说明</th></tr></thead><tbody><tr><td>-p</td><td>补丁格式显示差异</td></tr><tr><td>–stat</td><td>更新文件统计</td></tr><tr><td>–name–status</td><td>显示文件变化</td></tr><tr><td><strong>–graph</strong></td><td>图形显示分支</td></tr><tr><td><strong>–pretty</strong></td><td>以其他格式显示，如oneline、format</td></tr><tr><td>–abbrev-commit</td><td>显示简略SHA-1编号，也就是id号</td></tr><tr><td><strong>–oneline</strong></td><td>简略显示(–pretty=oneline –abbrev-commit)</td></tr></tbody></table><p>注：format格式祥见参考资料。</p><h4 id="4-2-条件筛选"><a href="#4-2-条件筛选" class="headerlink" title="4.2 条件筛选"></a>4.2 条件筛选</h4><table><thead><tr><th>选项</th><th>说明</th></tr></thead><tbody><tr><td><strong>–grep</strong></td><td>正则搜索</td></tr><tr><td>–author</td><td>作者搜索</td></tr><tr><td>–committer</td><td>提交者搜索</td></tr><tr><td>–all-match</td><td>多条件都满足才显示</td></tr><tr><td>–no-merges</td><td>不显示合并操作历史</td></tr></tbody></table><h4 id="4-3-时间筛选"><a href="#4-3-时间筛选" class="headerlink" title="4.3 时间筛选"></a>4.3 时间筛选</h4><table><thead><tr><th>选项</th><th>说明</th></tr></thead><tbody><tr><td><strong>-(n)</strong></td><td>显示最近n条日志</td></tr><tr><td>–since</td><td>从….开始</td></tr><tr><td>–before</td><td>在….之前</td></tr></tbody></table><p>注：日期格式 年-月-日</p><h3 id="五-比较命令"><a href="#五-比较命令" class="headerlink" title="五.比较命令"></a>五.比较命令</h3><table><thead><tr><th>具体形式</th><th>含义</th></tr></thead><tbody><tr><td>git diff (filename)</td><td>显示暂存和工作区差异</td></tr><tr><td>git diff commit (filename)</td><td>显示工作区和指定版本的差异</td></tr><tr><td>git diff -cashed commit (filename)</td><td>显示暂存区和版本库的差异</td></tr><tr><td>git diff commit1 commit2 (filename)</td><td>显示版本间差异</td></tr></tbody></table><h3 id="六-SSH"><a href="#六-SSH" class="headerlink" title="六.SSH"></a>六.SSH</h3><h4 id="ssh-keygen"><a href="#ssh-keygen" class="headerlink" title="ssh-keygen"></a>ssh-keygen</h4><table><thead><tr><th>参数</th></tr></thead><tbody><tr><td>-b：指定密钥长度</td></tr><tr><td>-e：读取openssh的私钥或者公钥文件</td></tr><tr><td>-C：添加注释</td></tr><tr><td>-f：指定用来保存密钥的文件名</td></tr><tr><td>-i：读取未加密的ssh-v2兼容的私钥/公钥文件，然后在标准输出设备上显示openssh兼容的私钥/公钥</td></tr><tr><td>-t：指定要创建的密钥类型</td></tr></tbody></table><p>①ssh-keygen -t rsa -C 字符串</p><p>②把公钥复制到 github</p><h3 id="七-github"><a href="#七-github" class="headerlink" title="七.github"></a>七.github</h3><h4 id="7-1-网页比较"><a href="#7-1-网页比较" class="headerlink" title="7.1 网页比较"></a>7.1 网页比较</h4><table><thead><tr><th>比较类型</th><th>例子</th><th>规律</th></tr></thead><tbody><tr><td>分支间比较</td><td><a href="https://github.com/rails/rails/" target="_blank" rel="noopener">https://github.com/rails/rails/</a><strong>compare</strong>/4-0-stable…3-2-stable</td><td>仓库地址/compare/分支名…分支名</td></tr><tr><td>某一时间段前</td><td><a href="https://github.com/rails/rails/compare/master@%7B7.day.ago%7D...master" target="_blank" rel="noopener">https://github.com/rails/rails/compare/master@{7.day.ago}…master</a></td><td>分支名+@+时间段…分支名(同)支持：day、week、month、year</td></tr><tr><td>指定日期之间差别</td><td><a href="https://github.com/rails/rails/compare/master@%7B2013-01-01%7D...master" target="_blank" rel="noopener">https://github.com/rails/rails/compare/master@{2013-01-01}…master</a></td><td></td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>git</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>你只是看起来很努力</title>
+    <link href="/2018/08/24/%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%9C%8B%E8%B5%B7%E6%9D%A5%E5%BE%88%E5%8A%AA%E5%8A%9B/"/>
+    <url>/2018/08/24/%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%9C%8B%E8%B5%B7%E6%9D%A5%E5%BE%88%E5%8A%AA%E5%8A%9B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="你只是看起来很努力"><a href="#你只是看起来很努力" class="headerlink" title="你只是看起来很努力"></a>你只是看起来很努力</h1><p>《你只是看起来很努力》书籍摘要</p><h3 id="愿有人陪你颠沛流离"><a href="#愿有人陪你颠沛流离" class="headerlink" title="愿有人陪你颠沛流离"></a>愿有人陪你颠沛流离</h3><p>作者　卢思浩</p><pre><code>10年时我在日记里写：**“我们之所以会觉得焦虑，无非是因为现在的自己和想象中的自己，很有距离。”而我们离想象中的自己越来越远，很大程度上都是因为我们在一点点地辜负自己。**关于焦虑，我发现我们或多或少地都陷入了一个怪圈，这个怪圈叫：我们看似忙碌，实则焦虑。我们总是心血来潮想学习，于是买了很多单词书，再也没有翻开过；我们总是备受刺激想健身，于是找了很多攻略，再也没有动过；我们总是信誓旦旦要读书，于是买了很多书，再也没有打开过。我们总是花很多时间在社交网络上，把认为有用的东西另存为，直到你的硬盘存满了资料，你还是没有看过。我们忙碌，可我们却没有真的去了解那些自己精挑细选留下的内容。我们花时间收集，却忘了最重要的其实是花时间去消化。你说你想要当自由撰稿人，可从不见你努力写稿；你说你想考研，可从不见你背单词做题；你看到学霸时嗤之以鼻说这样活着没意思；你看到有人旅行又不屑一顾地说这只是随大流。**我开始怀疑你挂在嘴边的是不是逃避现实的借口，我开始怀疑你是不是在一遍遍地逃避和自我安慰中变得惴惴不安。**一本书买了不看也不过是印着字的纸而已；单词书买了不背充其量就是26个字母的排列组合；下载的演讲公开课不听也只是一堆无用的影像，可能你只是随手下载了，就再也没有去看过。**于是有一天你发现，堆积的东西已经看不完了。**你看着一个个公开课、一本本单词书，无从下手从而越发焦虑。**拖延和等待，是世界上最容易压垮一个人斗志的东西。**我不知道这样的人有多少，但是我可以肯定，每个人身边几乎都有这样的人。他们做一些事情，并不是出于自己的爱好，或者深思熟虑的结果。而是**他们想要让自己忙碌起来，可以让自己看起来不被别人落下太多。**不要看到别人做什么好，就去尝试做什么，因为每个人表现给你看的不一定就是全部。很多时候你跑到别人的轨道上了，才发现那个不适合你，看起来光鲜的其实也有属于他们自己的苦逼。看到全部，再谨慎地做选择。</code></pre><p>那么怎么打败焦虑？<strong>打败焦虑的最好办法，就是去做那些让你焦虑的事情。</strong></p><pre><code>翻完尚龙的书，让我忽然想到了以上的文字。这本书的文字，让我有了久违的感悟，我希望你在看完这本书之后，也会有所感悟，会真切地做起身边的每一件事。**你知道，行动这件事，从来不需要等到什么好天气什么好状态，此时此刻就是永远，此时此刻就是一切。**共勉。</code></pre><h3 id="你只是看起来很努力-1"><a href="#你只是看起来很努力-1" class="headerlink" title="你只是看起来很努力"></a>你只是看起来很努力</h3><h4 id="关键句"><a href="#关键句" class="headerlink" title="关键句"></a>关键句</h4><p>看起来每天熬夜，却只是拿着手机点了无数个赞</p><p>看起来那么早去上课，却只是在课堂里补昨天晚上的觉</p><p>看起来在图书馆坐了一天，却真的只是坐了一天</p><p>看起来去了健身房，却只是在和帅哥、美女搭讪</p><h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4><pre><code>一次上课的时候,一个女孩子垂头丧气地跟我说: “老师,我考了四次四级,还没过,究竞是为什么?”我说: “你真题做了吗?单词背了吗?”她拿出已经翻破了的真题,跟我说: “你讲的所有题目我连答案都记得,我这么努力,为什么过不了?”    这是一个我印象特别深刻的学生,其实英语四级考试是一个超级简单的考试。据说,每年通过率有百分之八十多,那些没过的百分之十几还包括了裸考的和放弃治疗很久的学生。我想,一个人要多有毅力,才能一直保持在后百分之十几坚定地不过,并且连续四次。可是,看着这个学生满满的笔记,我心想,看起来是很努力啊,没理由不通过啊,这孩子会不会是脑子不好使。聊了很久,无解。这种感觉就像是一个医生知道病人有病,但是就是不知道如何去医治他一样。于是,我只能使出大招:“ 你这么努力,放心吧,下次你肯定能过的。”那个学生讪讪地说: “但愿如此。”对这个世界来说,没有什么果是没有因的,即使现在看不出原因,但也一定是存在的。那是我第一次也是最后一次见到那个女孩子,她再也没有出现在我的课堂上。结课那天,我来到她的位置旁,指了指她的空位置,问她身边的一个女孩子: “你认识她吗?”她说: “认识,她是我同学。”我说: “她为什么总是逃课?就第一次来了。”她笑笑说: “她事情比较多。”就是那天我找到了病因。这个女孩子是学生会主席,同时兼几个社团的团长,参加组织活动很积极,朋友也很多。唯一没有时间做的事情,就是独处。可学习英语其实是一个特别需要独处的过程。而她只是做了一套真题,草草地对 了一遍答案,然后冲出 自习室继续做学生会的事情了,至于这套题,在她脑子里只留下了“我这么努力地做了一套题</code></pre><p>”的意念,其余的什么都不记得。就像她告诉很多人 自己报了一个班,可是几乎从来没有上过课;就像她找很多人探讨过怎么学英语,但是从来没有真正记住点儿什么。骗别人很容易,骗自己更容易,可是,骗这个世界有点儿难。</p><pre><code>我想起了一个女孩子小白,她总是喜欢让我给她推荐一些电影和书,还要求是格调很高的。因此,我每次看过的书都会给她拿过去让她看。她每次看完,都会发一条微博,下面无数个赞。有一次我跟她闲聊,问 她: “你告诉我一下,上一本书你看完记住了什么吗?”她说: “忘了 (耳边好像有一只乌鸦在叫)。 ”回到家,我看她的朋友圈上说又看完了一本书,我赶紧给她的朋友圈点了一个赞。另一个朋友小路,特别喜欢去 自习室,然后每次在朋友圈都会看见她 的文字:最近很累;快考试 了,最后几天拼了;早出晚归……她写下的生活,总 是那么波折、努力。她给别人看的日子,都是那么具有正能量。可是,该不过的,还是过不了。她的所有考试结果,似乎都是波折和无奈。因为毕竟,所有的努力都不是给别人看的,而是这些努力是否真正到达了内心,变成了提升。一次和她一起自习,看见她带了会计书、英语书、考试卷子……还有手机。</code></pre><p>**    她一上午的学习其实都是在刷朋友圈、刷微博。这种所谓的努力,其实只是看起来很努力而己。**</p><pre><code>看起来每天熬夜,却 只是拿着手机点了无数个赞:看起来起那么早去上课,却只是在课堂里补昨天晚上的觉;看起来在图书馆坐了一天,却真的只是坐了一天;看起来去了健身房,却只是在和帅哥、美女搭讪。在我们身边,总有一些笔记记得很认真的人,但是考试成绩不理想;也总有那些学习成绩非常好,但看起来并不怎么认真的人,很多人把他们定义为聪明,其实他们只是在学习的时候摒弃了诱惑,一心一意地在努力,虽然那些努力没有让别人看到,但那段时间没有被干扰。这种感觉你不一定要让别人知道,有时候你也在深夜去痛斥这个世界的不公,你说自己这么努力,为 什么那个谁看起来一点儿也不用心,最后却有了很好的成绩。可是,他们的背后和你的背后,究竟做了一些什么?你 的生活和别人看到的你的生活,是不是一样的呢?因 此,你知道,那些所谓的努力时光,真的头脑风暴过了吗,真的走心过了吗,真的问心无愧 了吗?或者,它只是看起来很努力而己。</code></pre><h3 id="你以为你在合群，你在浪费青春"><a href="#你以为你在合群，你在浪费青春" class="headerlink" title="你以为你在合群，你在浪费青春"></a>你以为你在合群，你在浪费青春</h3><pre><code>写这篇文字的时候,是在一个偶然的情况下。那天,一个学生告诉我,一个宿舍四个人,他是唯一不玩游戏的,可是他们群起而攻之: “学习有什么用啊?装什么啊?你不加入我们,今后怎么可能会有出息啊?” 那天我特别郁闷地想起了我的大学。其实,在那个群体里面,过得很难受。我忽然明白,来大学学习不是为了合群,而是为了成就 自己的梦想,然后找到真正属于自己的群体。这感觉就像你是一个篮球高手,为 什么要在一群学英语好的人中间合群呢?无法选择 自己的室友,但是你能决定 自己的朋友;无法决定自己的生活圈子,但是你能决定 自己的理想境界。合到该合的群,寻觅 自己要的,无论是理想,还是朋友,才</code></pre><p>是大学四年该做的。</p><pre><code>曾经有一个宿舍,宿舍里面八个人。每当宿舍里的八个人都凑齐 的时候,寝 室长总会组织一个游戏,就是把八个人分成两组,每组三个人,组织大家打牌,剩下两个人就打开电脑,打起了 DOTA(一种网络游戏),或者拿出手机不停地刷着网页,或者躺在床上拿着 PsP(一 种玩游戏的工具)等待着他们的轮换。然后,一晚上就这样过去了。然后,一年就这样过去了。然后,四年就这样过去了。八个人里面,一定会有一两个人混得还可以,但是也一定会有人混得差。混得可以的,在大学四年,活得多么假:因 为他组织别人堕落,自己却坚定地 向前,表里不一,活得多么难受。而混得差的,永远不知道问题出在哪里。他根本不知道,他就是跟风了,可是到底哪里出了错误。最近的课堂上,我不停地强调一点给我的学生:大学期间,你无法选择 自己的室友,但是你可以选择 自己的朋友。因为,最近我开始发现,寝室,是堕落的开始;合群,是淘汰的起点。在好多人的字典里面:四个人,三个人不停地下载着苍井空出演的电影,第四个人不看,就是不合群。四个人,三个人打着游戏,第 四个人不玩儿,就是不合群。人是怕寂寞的,于是,大多数人都选择合群。**可是,你以为你在合群,你在浪费自己的青春;你以为你交了朋友,当你毕业一无是处时,谁还会把你当朋友;**你 以为你大学四年不孤单,当你毕业没有工作时,没有老婆的日子,你会更孤单。有人说孤单痛苦,那谁又说过,实现 自己的理想,不会痛苦?我短暂的大学期间,目 睹了太多为了合群而合污的惨剧。记得大一,总 有人叫我打游戏,我也打,可是留下的,是和他们-样的空虚。记得大二,当他们拿着手机不停下载新的游戏,我在角落却拿着单词书背单词。记得大三,寝室七个人对我集体发起攻击,说我不合群。更有人到处说我傲气逼人,到处说我坏话,但是我明白,与众不同,不是我错了,最后我只有 申请换寝室。但是现在我明白了,几年后的今天,当 一些人在烈 日下暴晒时,我却在空调房里写文章。最重要的是,我 己经忘记了当时说我不合群的那些人的名字是什么。我知道,他们中有可能还有人惦记着我。但是我只想说 ,他们惦记着我,说 明他们生活里面不能没有我;而我忘记 了他们的名字,说明我的生活里面可以没有他们。直到今天,我认识了许多人,有些是有名的大导演,有些是知名的演员,有些是很牛的实业家,有些是银行、政界的大亨,有些是当初都不会正眼看我一眼的美女,最重要的是,我交了一帮好朋友。此时此刻我才会感激,当 初我没有合群,现在,我才到了属于我 自己的群体中,去做我应该做的事情。如果当初我合群,现在身边,又会是谁,又会是什么景象。我一直坚信,英 雄,永远是孤独的,只 有小喽哕才扎堆。“二八定律”永远适合在地球的每一个角落:百分之二十的人,占有百分之八十的资产;百分之八十的人,为 百分之二十的人服务。尤其是男孩子,大学四年,一直合群,一直在寝室,一直不打开视野、故步 自封,做井底之蛙,这一切,总 会在今后走进社会的某一时刻一次性地还给自己。而女孩子,更是需要在大学中培养出独立的人格,依靠一个</code></pre><p>男人,永远比不上依靠 自己的双手创造的未来踏实。</p><pre><code>但是,我想说,我这里说的不合群,不是结仇,不是桀骜不驯。这里,我在大学做得不够,我检讨。至少,干万不要得罪人,因为“道不同不相为谋”。但是这不代表连话都不讲,或者恶语相向。**你支持他的生活模式,只是你需要拥有自己的思想。**这个世界很邪门,你永远不会相信,当 年最浑蛋的那个人,十年后会是政治界最有潜力的谁;你也不会相信,当 年最不合群的人,成为了百万富翁。无论如何,那些有点儿成就的人,都不合群;就算表面合群,他们的内心,也总有着 自己的一片世界,他们喜欢静静地思考,并且一直向理想迈进。</code></pre><h3 id="优秀不够，你是否无可替代"><a href="#优秀不够，你是否无可替代" class="headerlink" title="优秀不够，你是否无可替代"></a>优秀不够，你是否无可替代</h3><pre><code>前些时间我们工作室招人的时候，一个小姑娘笑嘻嘻地进来了。看了她的作品，很不错，于是就问她：“你想面试哪个岗位呢？”她说：“剪辑。”其实我挺想聘她的，但是我们剧组的剪辑既刻苦，能力又强，而且预算又不够，矛盾中，我问：“有没有想过换一个职位，比如说特效什么的。”她说：“我不会啊。”我说：“那你还会什么？”她愣住了一下，继续说：“我剪辑很不错的，您看了我的作品应该知道。”那时我非常矛盾，因为她确实很优秀，可是工作岗位已经满了。优秀的人很多，她可以被替代，先来后到，所以我们讨论了一会儿，最后推荐她去了另外的工作室。本来故事应该结束了。可是当天晚上，小姑娘给我发了一条很长的短信，问：“我很想加入你们的团队，而且我的能力也不差，为什么不要我？”其实换成其他人，就不回复了。而我好为人师的臭毛病又出来了，我想了半天，回了一条很长的短信：“小美，我们都看出你很优秀，可是剪辑这项工作你还没有做到极致，虽然我们都看到你到我们这里来后能力会提升得很快，你有超强的潜力，可是我们已经有了一个剪辑师，岗位已经满了。你虽然优秀，但运气不是那么好，可是你知道如果一个人无可替代，他的运气可能就好得多，下次一定要多学点儿能拿得出手的东西，会更好的！**告诉你一句话，在以后的学习、工作中，记得，优秀不够，一定要卓越，一定要无可替代才是最重要的。”**那天以后，小姑娘和我成了很好的朋友。我们经常一起吃饭，直到今天，她已经与大工作室签约了，月薪上万。她的微博个性签名上写着：**优秀不够，你是否无可替代。**其实只要你还在读文字，每天没有睡到中午，玩游戏没有玩到半夜，没有喝酒喝到天亮，那么你就是那种正在努力的人，一个一直看着阳光、盯着未来的人，一定是一个优秀的人。可是，为什么一个优秀的人还是被理想的公司拒绝，被自己的梦想拒之门外？**因为其实在这个世界上，没有什么只要努力就一定能成功的。毕竟努力的人很多，在大城市，最不缺的就是梦想，最不差的就是优秀的人。可是，你优秀又能怎么样，每个人对于优秀的评价又不一样，既然优秀不够，就让自己无可替代吧。**而无可替代的方式有两种：一是做别人不愿意做的事情；二是把别人都能做好的事情做卓越。这样的人，才是这个社会真正需要的。北大古生物专业一个女生的毕业照在网上疯传，因为那个系只有她一个人，大家都在调侃她上课肯定不能逃课；有些人在羡慕她，因为她不用愁找不到工作。因为如果社会上只有一个对应的岗位，没有关系户的前提下，这个岗位非她莫属；如果有两个呢，那么两个单位就会竞争要她，给她更高的薪酬待遇，因为她无法替代。这世上有很多人都是这样，做别人不愿意做的事情，做到无可替代。BruceLee去好莱坞之前，有很多武行的高手都在电影中崭露头角，但只有BruceLee愿意去美国发展，当时很多武术大师都不愿意背井离乡去一个陌生的地方拼事业。而恰巧那时的美国正发生着影视文化大爆炸，BruceLee去了之后，也并不是他的打法比别人都牛，而是因为他是好莱坞武术组的唯一华人，所以，他变成了国际巨星，成为一代大师。其实那些所谓的成功人士，很多都是做了别人不愿意做的事情，才让自己无可替代的。几年前我在军校学英语，身边人都觉得我有毛病。记得无数个夜晚我拿着厚厚的英文字典去自习室，空空的教室对着墙大声朗读着、背诵着，那时我在纸上写了一句话：耐得住寂寞，才能享受繁华。后来这句话在网上被不停地转发。记得同学问过我一句话：“已经学得很好了，干嘛还要继续学？”我说：“好不够，要拔尖才可以。”2010年，我参加了希望英语演讲比赛，经过激烈的角逐后，我拿了北京市一等奖、全国第三名。主持人说：“你是我们这个舞台第一个穿军装的演讲者。”那段时间很多人问我：“在你那样一个环境中，都没人学英语，你为什么要学英语？”我笑笑说：“就是因为没人学英语，我才学的啊。”我记得，那段时间脑子里面都是如何让我自己变得无可替代的记忆。很感激那段日子，每天跟打了鸡血似地学英语，才能有了今天自己想过的日子。直到今天，我已经开始一心一意地做工作室，拍出好电影。这条路很远，有很多人都在竞争，而我还会继续让自己强大起来，每天进步一点儿，做别人不愿意做的领域，把别人都能做的领域做绝，才能无可替代。我在英语培训这个行业做了4年，对于这个行业来说，最有名的不是公司高层，也不是工作人员，而是那些拥有一技之长的老师。这些老师一直都是每个公司寻找的。他们有一技之长，是无可替代的。在这个行业呆久了，我逐渐明白了，让自己强大起来比什么都重要。每次读《水浒传》时，都会觉得挺有意思的，那些当年风云江湖的宋江、李逵，最后都没有好的下场。而最后有善终的、被重用的竟然是吹笛子的萧让、刻字的金大坚等这些专才。杜甫留给世界的，也不是他的官职，而是他写的诗篇。因此，对于我们这一代的人，在这个世界上活下来的利器，其实是一技之长。如果你在体制内工作，决定你命运的是领导的一句，那么用一技之长活在世界上的人，评价你的是市场给你的相对公平的分数。靠手艺活着，哪怕没有体制内的稳定，但总是活得自在点儿、舒服点儿，而那些无可替代的手艺人，才是每个社会机器需要的必要零件。年轻人，在学习的路上，不要低着头看书，多去人才市场看看现在社会需要什么专长，上网看看大型公司缺的是什么人，把一技之长磨得无可替代，变成自己喜欢的事业。这一路可能很难受，但是，没有哪个高手在修炼的时候是不寂寞、不难受的，既然选择无可替代的路，那么在实现梦想的路上挨两拳又如何呢？</code></pre><h3 id="没有一条路是白走的"><a href="#没有一条路是白走的" class="headerlink" title="没有一条路是白走的"></a>没有一条路是白走的</h3><p>   我在读书的时候有一个兄弟叫小楠，这人不喜欢讲话，做事非常有目的性。每次我们在一起聊天的时候，他总是能直入主题，然后得出一些总结性的结论，最后让我们不知道如何接下去。每次我们几个做出格的事情，他总是最理智的人；每次我们几个喝酒喝成狗的时候，他就是那个负责把我们送回去的人。虽然是好朋友，但是每次我都会坏坏地想，他这辈子的生活可能就是这样了，不会有太多出彩的地方，不会出大错误，也不会有让我震惊的彩蛋。</p><p>   有天我和东商量着，说：“这家伙每次都看我们喝多，哭得跟狗一样，这次我们两个一起灌他，非要让他说点儿泪奔的事情，即使他没有，也要看看他内心深处到底装着什么。”那天，我拿酒杯不停地碰他的瓶子，东一次次和他干到瓶子翻过来，直到看到他瘫坐在凳子上开始笑，然后，他讲了一个关于他自己而且让我震惊的故事。</p><p>   那是一个暑假，高三的学生丢掉书包、烧掉课本，开始疯狂地旅行，开始了再也不用遮羞的恋爱，开始了驰骋在球场上的比赛。而小楠，却已经开始纠结自己报考的志愿了。因为父亲是部队的，小楠从小就给自己定下了目标，说自己以后也要报考军校，为国效力。可是，小楠的父亲坚决反对小楠进入部队。其实一个家长不让自己子女承继自己的事业有两个原因：一是明白自由的可贵，知道自己有自己的生活和爱好的重要性，孩子也是一样的，不能将自己的想法强加给自己的孩子，这种家长是伟大的；二是深知自己的生活不是自己想要的，自己已经过得难受了，而孩子明明可以有更好的选择，这种家长，更伟大。而小楠的父亲，不管基于哪种考虑，就是坚决反对他考军校。</p><p>   两个人吵了几天后，无果。小楠的父亲拿走了小楠的报考表，藏了起来，准备帮他报好了再告诉他。第二天，抓狂的小楠不见了。</p><p>   父亲找了他两天，焦虑得到处打电话。而此时此刻的小楠，一个人去了大兴的一支特种部队，静坐在门口。那天是一个炽热的日子，知了叫破了天，鸟张开翅膀像老鹰一样准备展翅高飞。</p><p>   门岗看到一个小男孩坐在部队大门口一天一夜了，好奇地走过去，看着小楠，问：“小伙子，你是干吗的？”</p><p>   小楠抬起头，慢慢地说：“我要见你们政委。”</p><p>   那天下午在政委办公室，政委打电话给李楠的父亲，终于，他父亲妥协了。</p><p>   小楠走进了自己梦寐以求的军校，训练时比别人都刻苦，表现比别人都好，别人跑步跑五千米，他就跑一万米，别人学习到九点，他就学习到十一点。大二，他遇到了同样爱在图书馆看书的我。我们成为了好朋友，喜欢聊聊自己这周读过的那些好的文字和一些新的想法。</p><p>   我们一起做过的疯狂的事情很多，我曾经把这些故事写成了小说，最终没有发表。我们甚至无话不谈，可是我却清楚地明白，我是注定要离开这个环境的，因为我生性喜欢自由，不愿意被束缚，而小楠不一样，他有很强的忍耐力，喜欢这种日子。虽然路注定不同，但是都互相祝福着彼此。一年后，我离开了军校，去追求自己想要的生活了。</p><p>   本来故事到这里就结束了。可是，两年后的一天，我接到了小楠的电话。在此之前，我与小楠失去了联系，只知道他被分配到最艰苦的地方了，那里连手机都不让用，据说那里方圆几十公里都没人。</p><p>   小楠说：“尚龙，明天，我想去找找你。”</p><p>   我说：“你还活着呢，哈哈，可是你怎么出来啊？不是不让出来吗？哎，不是不让用手机吗？”</p><p>   小楠说：“你别管了。”</p><p>   那天，我和东、耗子几个好久不见的好兄弟聚在了一起，见到了黑了许多而且两年没消息的小楠。我们以为小楠带来了一个升迁的消息，后来小楠喝了一杯酒，缓缓地说了一句震惊全场的话：“明天哥们儿就能退伍了。”</p><p>   那天晚上除了他充满希望的笑容，我就只能隐隐约约地记得大排档的嘈杂和喝酒撸串的自由。他说：“来到最艰苦的地方，该体验的都体验了，也该换个生活方式了。”</p><p>   他继续说：“一开始父亲不同意，单位领导也不同意，尤其是我爸爸。我两周没有接他的电话，哈哈，我又想起了五年前的那个夏天。”</p><p>   我问：“那你想好以后要干点什么了吗？”</p><p>   小楠说：“可能会做和摄像有关的事情吧，我最近在学习呢，算是初学吧，跟你这个大导演不一样。但是无所谓了，反正我们能常聚聚了。”</p><p>   这个时候，东问：“可是，毕竟坚持五年了，你不觉得这五年白白浪费了？要是这五年学习摄像就好了。”</p><p>   小楠喝了一杯酒，说：<strong>“其实不存在白活的日子。不经历那些，我永远不知道自己爱什么；不经历那些，我永远不知道现在的生活是多么可贵；不经历那些，年老的时候，我一定会后悔这些什么都没做只是想想的日子。”</strong></p><p>   那天，我们喝了很多，然后在KTV唱着五月天的《咸鱼》，哭得稀里哗啦。忽然明白，其实这个世界上没有所谓一条白走的路。就像你走在一个十字路口，你永远不知道下一步你要向东南西北哪一个方向。一些人在行走的时候有高人指路，告诉他们这条路可以这样走，那条路走完会是什么样的，虽然容易了很多，可是失去了那种未知的快感和有趣的不确定性。一些路，只有你走过了、走错了、走进死胡同了，你才知道这条路是不能走的，这样并不影响你的速度，因为，生活和速度无关，和终点无关，和路程上的风景、和陪你的人、和走路的心情息息相关。虽然你的路走错了，但是你看到了别人看不到的风景，一路上认识了你一辈子可能会擦肩而过的人，闻到了那些可能永远不会闻到的花香。其实，没有哪条路是白走的。</p><p>   我记得当时读《乔丹自传》的时候，里面有一句话很感动我，他说：“如果不打两年棒球，我永远不知道自己这么热爱篮球。”</p><p>   有时候我会觉得，明明两点之间最短的距离是线段，上帝为什么让你绕着走？后来随着成长，我开始明白，两点之间的线段虽然最短，但是那条曲线是最美的。而世界上美丽的图画，很少有直线，都是由那一道道曲线构成的。</p><p>   小楠的故事到此就结束了，现在的他，我也不知道在哪儿，只知道他终于迈出了第一步，或许他以后想来当导演也不一定。无论如何，这一路，他看见的风景、经历的事情，都是钱无法买到的。</p><p>   没有什么路是白走的，没有什么事情是白做的，这些看似无意义的事情，都是成长的基石。我们生命中的每个插曲都有着它该有的意义，所以不要抱怨为什么不早点儿做，更不要后悔要是做了什么就好了。你有后悔、抱怨的时间，不如整装待发前进起来。有时候只有走错了路，才逐渐明白自己要的未来；只有交错了朋友，才逐渐知道什么是患难见真情；只有爱错过人，才逐渐懂得真爱是什么。</p><h3 id="只要你还能去追，就应该不抱怨地前进"><a href="#只要你还能去追，就应该不抱怨地前进" class="headerlink" title="只要你还能去追，就应该不抱怨地前进"></a>只要你还能去追，就应该不抱怨地前进</h3><pre><code>四年前，我从军校退学出来。那个时候，我年少轻狂，加上英语很好，在几乎全世界都反对下，我说服了父母，说服了我最亲的朋友，然后脱掉军装，勇敢地去追自己想要的梦——去教英语。那个时候，我已经在部队立了二等功，加上爸妈都是部队的老兵，离开的难度很大。当天，我给爸爸写了一封很长的信，告诉他我以后会靠什么为生。我的父亲是一个很通情达理的人，看完我的文字后，同意我走了。</code></pre><p>离开部队的时候，我跟我最好的朋友东说：“兄弟，你也出来吧。”</p><p>东说：“你有一技之长，出来有饭吃，我没有。”</p><p>我说：“跟一技之长没关系，我们还年轻可以一起努力，世界总有一天是我们的。而且你明明待在里面不开心，为什么还要继续这样。”</p><p>东说：“你不懂，因为我背负的压力太大。我们家是农村的，父亲必须要我读军校，我没法选择。”</p><p>我说：“你为什么不去斗一把。”</p><p>东说：“斗不过，我背负着的是一个村庄的压力。”</p><p>的确，我不懂，一个本该飞翔的年纪，何来无尽的压力？</p><p>那年，我开始教书，靠微薄的收入生活在北京。那个时候爸爸虽然生我的气，但是还是决定每个月给我三千元钱，说，就这么多了，其他靠自己吧。</p><p>而我倔强地跟爸爸说，要自己扛过去。</p><p>最困难的时候，一个人在出租的单间吃了一个月的泡面。那段时间，我想念在军校和东一起喝酒扯淡的日子，而现在，每次喝多了都是一个人。有一次喝多了跟东打电话，说你为什么不出来，你出来我们两个就创业了，就算两个人一起开个咖啡厅也好。</p><p>东说：“我也想。唉，可是我不敢迈出第一步。”</p><p>我说：“为什么，你这么年轻？”</p><p>可能是因为我说多了，他喊了出来：“龙哥，我是不喜欢不勇敢，可是我是为了我爸读的军校。他病了，我更不敢气他了！”</p><p>我挂了电话，什么也没说。只是觉得，为什么这么懦弱。</p><p>那段时间，我一个人默默地努力，赚了一些钱，认识了一些朋友，日子，却越来越孤独。那段时间，我一个人看书、写文章，还报考了自己喜欢的导演系。</p><p>我记得一次，自己一个人去旅游，到了西安。在大雁塔下面有一个用脚写毛笔字的小女孩，她的手是残废的。而在她的边上，有一个大概十岁的小女孩，手上拿着一个气球，跟妈妈说：“妈妈，我也想要一支画笔。”妈妈说：“要画笔干吗？”她说她也想成为画家，然后就开始哭闹、撒娇。两个小女孩对比非常明显。</p><p>我看着她写完后，问她多大了。</p><p>她慢慢地说：“18。”</p><p>我说：“你怎么练习这些的？”</p><p>她说：“因为妈妈去世得早，自己很小的时候出车祸残疾了，父亲病重，只能这样继续生活了。”</p><p>我说：“你写得很好，什么时候学的？”</p><p>她说：“有手的时候，我当时的梦想是想成为画家，可是现在……”</p><p>那一刻，我想起了那个因为妈妈不给买画笔的小女孩，我定在风中，久久不能平静。</p><p><strong>我忽然明白，当你在抱怨世界不公平的时候，在你抱怨梦想太远够不着的时候，当你在咒骂目标的路上太多荆棘的时候，有些人连努力的资格都没有，因为一些人，出生就背负着太多的压力。所以，天命就是对他们不公平。</strong></p><p>那天我打电话给了东，告诉他：“在里面好好混，我懂你的苦。”</p><p>接下来的几年里，我拍电影有了一些起色，拿到了很多视频网站的首播权，文字也写得有了一些传播量，接着我成立了自己的团队：龙影部落。这个时候，曾经自己最好的朋友都聚集到了我的身边，我又想到昔日最好的朋友东，跟他聊了很久我的梦想后，他动摇了。他告诉我：“太好了，我准备加入。”</p><p>有时候觉得上天让人生变得戏剧化是因为它开始无聊了，或者是上天让一个人经历了太多只是为了让他变得更强大。</p><p>不久后的一天夜里，东飞回老家，去见他得癌症将走的父亲最后一面。</p><p>而我随后也跟了过去。看到花圈和灵堂，以及自己最好兄弟的眼泪，我的眼泪也开始不停地打转。</p><p>那天，东的母亲跟我说，他父亲临走前最后一句话，就是希望他继续在部队好好干。而东也抓着他父亲的手，说：“爸，我一定这样做。”</p><p>当天的星星特别美，我看着自己的双手，我没有残废，摸着自己的肩膀，没有负担和压力，只是有时候生活给我带来了一些小小的挫折，自己却经常抱怨。在追梦的路上，偶尔被击倒，偶尔被打得头破血流，其实很正常，可是，有些人连追梦的资格都没有。当你发现能够追梦的时候，其实就已经很幸福了。</p><p>在这个世界上的很多角落，有多少人，因为家庭的原因和生活的变故，连梦想都不敢想，他们活在父母的阴影下，长在现实的黑洞中。所以，如果你四肢健全，时间充裕，又有什么资格抱怨自己今天又浪费了一天，又有什么权利不停地说自己好无聊呢。</p><p>“梦想”这个词，已经被滥用了，甚至每次一说到“梦想”这个词，就被人说成心灵鸡汤。而这样说的人，只是因为他们活得麻木，不知道生活还是要有一些盼头和希望的。而那些有盼头的，一定记得只要有梦，就是幸福的，只要你还能去追，就应该不抱怨地前进。珍惜当下拥有的，追求可以得到的，放弃不属于自己的，不去成为那个让你难过的断梦人。</p><h3 id="现在的分别，是为了更好的相聚"><a href="#现在的分别，是为了更好的相聚" class="headerlink" title="现在的分别，是为了更好的相聚"></a>现在的分别，是为了更好的相聚</h3><h5 id="一"><a href="#一" class="headerlink" title="一"></a>一</h5><pre><code>几年前我去美国看我姐,顺便见到了几个高中同学。那几个人,当年都是学校里面学习数一数二的高材生:现在,一个整天在教堂祷告;一个虽然在很有名的 IT公 司上班,却过着脸上没有笑容的日子;另 一个,还在要死不活地找着工作。那天我们几个喝得大醉,聊了很多过去的事情。我姐上大学的时候,离家非常近,走路几步就能回家。而我考到了北京,那时思乡的感觉永生难忘:每次难过的时候,都想跟父母打一通电话,那时觉得,姐姐很幸福,离家近,可 以随时见父母 。可是,她却天天嚷嚷着要出国读研 。她很努力,之后,她顺利地考上了自己喜欢的新闻专业,得到了 Boston(波 士顿)大学的 offer。她出国的时候,我曾经问过她,为什么要出国受那苦。家这么近,最爱的人都在身边,作死啊?她的回答很简单,在家久了,总要去看看外面的世界吧。然后她上了飞机,消 失在了机场的人山人海中。像我姐这样的“美漂”很多,他们怀着一颗炽热的心,对未来充满希望,迈进了美利坚,却发现怎么也混不进主流社会。因为毕竟,即 使你们语言相通,但是成长环境、文化背景不一样,怎么都和当地人聊不到一起去。在别人谈论波士顿橄榄球队四分卫 19Oo年 是谁时,你却还在思考橄榄球 的规则是什么。这样的留学生,在美国很多很多,孤单自然而然随时伴随左右;他们学习很刻苦,可即使很努力地准备期末,最后还是得 了个 C,因为中国学生不知道上课的沉默成 了平时成绩最大的杀手,不 被理解 的感受 自然而然一直在身边;他 们去社会实践被碰了一鼻子灰,因为他们不懂得美国的体制和规则,痛苦、难受自然而然无处不在。但好在他们依旧努力着,他们一次次在这片异国他乡流着眼泪,却告诉父母: “我很好。”挂掉电话后,一个人看着天,擦干眼泪继续钻进实验室或者疯狂地写 paper。那天我问几个朋友,在美国这么憋屈图什么。他们没有说话。许久,朋 友说: “尚龙,你知道为什么我们要离开最爱的父母身边,离开最熟悉的地方,去经历最痛苦的分别吗?”我摇摇头。他说: “为了以后能更好地团聚。”那个时候,我姐和另外几个朋友边哭边点头。而我,沉默了很久,只是把这一刻,记在了自己的脑海中。一个人行走在这个世界上,都是孤独的。父母不会陪你一辈子,幸福的是,中国的父母,会在你成年之后依旧陪伴你很长一段时间。可是,想要在这个世界更好地走,光让人搀扶着你是不够的,你总要一个人孤单地走完一些路,去一些陌生的地方,见一些没有见过的人,吃一些从未吃过的苦。这一切,不是你 自己作死,只 是为了让 自己的羽翼丰满,能更好地陪伴那些不想离开的人。之前读 《狼图腾》的时候,总是很困惑为什么狼会在小狼很小的时候就把它们放在草原中让它独立猎食,是 因为,只有这样,它才能成长。对我们来说,总 要学会一个人行走,即 使摔跤</code></pre><p>很疼,也要至少尝试 让双脚独立站立在这片土地上,只有这样,你才是一个更强大的人。所 以,离开亲人的分别,是为了更好地团聚。</p><h5 id="二"><a href="#二" class="headerlink" title="二"></a>二</h5><pre><code>高考结束后,我考上了北京的一所军校,离开家前夕,得知部队不让用手机。于是,临走前的几天,我和几个高中很好的哥儿们喝了最后一次酒。因为我知道,一些朋友,长期不联系,可能就再也不会联系了。那天,我含着眼洎跟每个兄弟拥抱。兄弟问我,既然离别痛苦,为什么还要离开。我一时语塞,只 是拍拍他的肩膀,不知道怎么回答。后来,我一个人坐火车离开家,父母来送我,从玻璃窗看见父亲,他开玩笑地跟着火车跑了两步。那时,我再次想起 了这个问题:既然离别痛苦,为 什么还要继续选择离别?在火车上,我忽然明白了,这些不情愿的离别,是为了让 自己变得更好,以后能更好地团聚。几年后,发小耗子来北京打拼。那时,我 已经在北京有着 比较体面的工作和住处了。一次,我 们在家里炸鸡翅,忽 然想起,我们两个已经认识十三年了。</code></pre><p>我感叹了一下。</p><pre><code>他笑笑说: “记得我们在高中学校食堂吃饭,看着鸡翅就流口水,因为没钱买。每学期期末,我们把存在卡里最后的一点儿钱凑在一起买好多鸡翅,兄 弟几个一起吃。当时想,等 以后有钱了,天天吃鸡翅。”我们都笑了。这些年的分别和背井离乡,只是为了让 自己变得更强大、变得更好,从此,和最好的朋友,永远不分开。时间必然会洗刷一些人,但真正的朋友,从未疏远。对于每一个人,每天进步一点点,即 使孤独,但依旧希望着 。没有人喜欢火车站离别的背影,没有人喜欢飞机场远行的转身,我们每个人都爱酒桌上的碰杯和团聚时的大笑。可为什么还是要离别,因 为那些离别,能让我们知道,其实我们本来就孤独,那些不孤独 的 日子,因 为有你 的陪伴,所 以我很快乐;接 下来离别的 日子里,请让我们都变成 自己更喜欢 的人,然 后别分开了吧。</code></pre><h5 id="三"><a href="#三" class="headerlink" title="三"></a>三</h5><pre><code>一次在机场,一对情侣,满脸泪光地离别。男生背着包,似乎要离开这座城市去外地生活,女生抓着他的手,久久不放开。男孩用手擦干她 的眼泪,说:“ 等我上学回来 ,我们就结婚 ,两年,不长的。”女孩抽泣地说: “我等你变得更好,我也会努力 !”我在旁边,调大了耳机里面的音乐,因为,我不想让 自己太感伤,更不想听清楚他们在讲什么,此时此刻,只是默默地祝福着他们,安静地祝福,就好。两年了,也不知道男孩是否实现了自己的诺言;不知道两人是不是 己经结婚或者已经相忘于江湖;不知道男孩是否还爱着这个女孩,女孩是否还念着这段岁月。可是,有一件事是确定的:男孩的离开,是为了让他们 以后不再离别,无论结果如何,那个转身和那些个再见,在两个人心中,一定刻下了永恒。他们在夜晚发光,告诉着自己:路本孤单,谢谢你的陪伴。其实,谁的一辈子都是孤单的。而离别,能让我们懂得陪伴的可贵;**这些年孤单的苦,不为别的,只是为了让自己变成自己想成为的那个人,然后微笑着看着过去的自己,充满自信地告诉爱的人,以 后我们会变得更好,而且都不要分开。**</code></pre><h3 id="最亲的人，最容易忽略他们的感受"><a href="#最亲的人，最容易忽略他们的感受" class="headerlink" title="最亲的人，最容易忽略他们的感受"></a>最亲的人，最容易忽略他们的感受</h3><pre><code>这篇文字源于一个故事。一个孩子和父母吵架,孩子一气之下离家出走了。他走了很远很远,走到了一个 自己也不知道的地方。一整天,他没有吃一点儿东西,于是他去面店要一碗面,被店主赶走了。他去快餐店要个汉堡,又被服务员赶走。他万般无奈,坐在地上哭。一个老太太路过,看见他哭,就递给他一个面包。孩子一边吃面包,一边告诉了老太太 自己为什么沦落成这样,说完,他跟老太太说: “您真好,还给我吃的,我 以后能不能跟您生活在一起,我能照顾您。”他以为老奶奶会很感动,没想到的是,老奶奶一把抢过面包,发飙说: “你不配吃这个面包。”孩子震惊了。老奶奶说: “我只是给你了一个面包,你就感动到要照顾我,你想过你的父母吗,他们每天管你吃喝,无条件地对你好。而你昵,却为一点儿小事离家出走,你想过他们的感受吗?”孩子醍醐灌顶,于是回到了家。从此,用 心照顾着父母。这个故事的缩影比比皆是,它是一个心理学的知识。**当一个人不停地、无条件地对你好,你往往会 以为这是应该的,自 然而然地忽略了他们的存在和感受:而一些陌生人的忽然温暖会让你记住很长时间。**就像是一盏灯,它总是亮着,你不觉得它亮,你潜意识地认为,它就应该亮。可是,一盏坏了的灯忽然亮了,你会觉得这盏灯格外明亮。所以,聪 明的员工不会一直默默地奉献,他们会像这盏灭着的灯一样,告诉老板我在为贵公司加班奉献;聪明的父母不会无条件地溺爱 自己的孩子,他们会让孩子明白自己才是未来的主人,告诉孩子我只是在帮助你;聪明的情侣不会承诺无论你做什么我都爱你,他们会暗示对方这一切都是相互的,告诉彼此只有你爱我我才会对你好。所以,很多人说,对于感情,谁先承诺,谁就败了。</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>读后感</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>别管男权女权,一起建设共产主义</title>
+    <link href="/2018/08/24/%E5%88%AB%E7%AE%A1%E7%94%B7%E6%9D%83%E5%A5%B3%E6%9D%83-%E4%B8%80%E8%B5%B7%E5%BB%BA%E8%AE%BE%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89/"/>
+    <url>/2018/08/24/%E5%88%AB%E7%AE%A1%E7%94%B7%E6%9D%83%E5%A5%B3%E6%9D%83-%E4%B8%80%E8%B5%B7%E5%BB%BA%E8%AE%BE%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89/</url>
+    
+    <content type="html"><![CDATA[<h1 id="别管男权女权，一起建设共产主义"><a href="#别管男权女权，一起建设共产主义" class="headerlink" title="别管男权女权，一起建设共产主义"></a>别管男权女权，一起建设共产主义</h1><p>知乎、微博、公众号男女权纠纷随想<br>我(男性)曾经自称自己是一个半女权主义者，我支持女性为争取同等的职业发展、更少的家庭暴力和更少的性骚扰上做出的努力。但是由于一些自称女权主义者经常在社交媒体上发表一些辱骂性文章，并且攻击范围经常是全体男性，以及评论区过度的反应，我并不愿意发表自己的看法。</p><p>昨天，在虎嗅上的一篇文章《生而为男，我很抱歉》，引发我的深思。我看完了文中的纪录片《红色药丸》，并且看了豆瓣上和知乎上对于这个纪录片的一些言论，的确很让人震撼。文章和视频中列举了很多男性受压迫的数据，男性更多的从事危险性工作、在受到家庭暴力和性骚扰时不被重视、更少的获得抚养权、更高的自杀率等。在这里我不想再罗列更多的数据，这不是比惨大赛。在观看影片时，我一开始关注于那些极端女权主义者的行为，并感到愤怒，但是我思考后发现，既然男性和女性都说自己被压迫，那么引用毛爷爷的话:”<strong>谁是我们的敌人</strong>？”</p><p>所以，我想思考女权、男权的敌人到底是谁？我将从三个方面考虑：<strong>职业歧视、性骚扰、生养成本</strong></p><h3 id="一-职场歧视"><a href="#一-职场歧视" class="headerlink" title="一.职场歧视"></a>一.职场歧视</h3><p>那我们从职场歧视开始。职场歧视本质来源于女性员工的产假以及后期抚养孩子需要时间和精力，显然相较于男性员工，她们的工作能力提升缓慢甚至降低。因此，为了平衡这种关系，有了强制男性产假等措施，目的是为了平衡男女员工的工作能力。但是普通男性员工是职场歧视的发起者吗？是受益者吗？</p><p>有人说，职场歧视使得男性员工更具有竞争力，获得更好的职位。这是存在的，我承认。但是当这位男性员工有老婆因为职场歧视而离职时，你就很难说他是获利还是损失。那么，他们是职场歧视发起者吗？我想大多数男性员工没有决定公司招聘标准的能力，相反很多男性希望有更多的女同事(大家都懂的)。那么谁是受益者和发起者？我认为是公司的管理层，说细一点，公司的老板和董事会。当一个老板发现少雇佣、甚至不雇佣女员工能获得更多利益时，我想这个决定是自然而然的。那么，女性老板会好一点吗？可能吧，我不是专业研究者，但是我悲观的认为在私欲的驱动下，情况不会好转多少。<strong>这本质上是私有制和人的私欲在作怪。</strong></p><h3 id="二-性骚扰"><a href="#二-性骚扰" class="headerlink" title="二.性骚扰"></a>二.性骚扰</h3><p>接下来是性骚扰，在MeToo活动中许多女性将过去没有说出口的故事讲了出来。在这类事情中导师和女学生、大主持人和实习生、校长和女学生是很常见的组合。那么这是为什么？很多女权主义者将其归咎于男性把握了大多数权力，但是很多调查中发现男性也会收到女上司的骚扰。男女上司是关键吗？我想不是。私认为，<strong>性骚扰的关键在于阶级性</strong>。当一方占据了高的阶级时，处于低的阶级的一方或为了糊口或为了其他利益，不得不忍受这样的侵害。</p><h3 id="三-生养成本"><a href="#三-生养成本" class="headerlink" title="三.生养成本"></a>三.生养成本</h3><p>最后一点是女权主义者认为男性和女性在生养过程中不对等，女性不得不牺牲职场前途和忍受生育风险来生养孩子。这一点上我同意女性在生养阶段付出了巨大代价，但是我想说的是男性并不是没有付出的，甚至可能付出更多。当一个男性有了小孩，这意味他有了更大的压力，他需要为小孩而挣更多的钱，并且不能随意的失去工作。在被女权主义者称为男权社会的环境中，男人没有能力就是窝囊废。并且女性在付出养育代价后获得回报也更多，正如旅行青蛙，培养一个小孩的成就感也很难衡量。你说女性怎么怎么付出，但是很多母亲也享受到了孩子的欢乐。</p><p>我认为，关键是要<strong>尊重双方自己的生育意愿</strong>。当一对夫妇共同决定生养一个小孩时，两个人都要对此负责。并且，相较于避孕药，使用避孕套对身体损伤更小，这是男性应尽的责任。对于传统男方的逼生，或者女方的奉子成婚都是不正当的，我反对任何违背个人意愿的生育行为。</p><h3 id="四-总结"><a href="#四-总结" class="headerlink" title="四.总结"></a>四.总结</h3><p>综上，我认为女权和男权的敌人其实是<strong>私有制和阶级制度以及人类私欲</strong>。</p><p>如果你看到这里，并且相信了我的胡言乱语。你可能会悲观，这下人类没救了。不，让我们回到标题。这些问题的解决方法就是<strong>共产主义</strong>：第一，生产力高度发展，物质财富极大丰富。第二，劳动不是谋生的手段，而是人们生活的第一需要。第三，社会成员共同占有生产资料，实行各尽所能，按需分配的原则。第四，消灭了阶级差别、城乡之间、工农之间、脑力劳动和体力劳动的差别。第五，作为阶级统治工具的国家完全消亡。那时，管理公共事务的机构虽然存在，但它已经失去了其阶级性质。第六，全体社会成员具有高度的共产主义觉悟。第七，人的全面而自由发展。</p><p>以上仅仅是个人一些想法，写到这里莫名的有点虚。。。</p><p>原文作者：我心永铭</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+      <tag>男女权</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>科技实现男女平等</title>
+    <link href="/2018/07/24/%E7%A7%91%E6%8A%80%E5%AE%9E%E7%8E%B0%E7%94%B7%E5%A5%B3%E5%B9%B3%E7%AD%89/"/>
+    <url>/2018/07/24/%E7%A7%91%E6%8A%80%E5%AE%9E%E7%8E%B0%E7%94%B7%E5%A5%B3%E5%B9%B3%E7%AD%89/</url>
+    
+    <content type="html"><![CDATA[<h1 id="科技实现男女平等"><a href="#科技实现男女平等" class="headerlink" title="科技实现男女平等"></a>科技实现男女平等</h1><p>哈哈，很变态的构想<br>虎嗅的一篇文章《生而为男，我很抱歉》让我看到了不一样的男权，在看完了《红色药丸》之后，我又在网上看了各种观点的言论。这让我更加悲观了，似乎男权和女权永远无法相互理解，更麻烦的是女权和男权定义都无法共识。不过，这不是这篇文章重点，我突发奇想，哪些科技能够实现男女平等？</p><p>我认为只需要四项核心科技：<strong>快速克隆、更换染色体、记忆移植、超级VR</strong></p><h3 id="选择自己的性别"><a href="#选择自己的性别" class="headerlink" title="选择自己的性别"></a>选择自己的性别</h3><p>前三项技术是为了变性，不是目前那种粗俗的激素和手术，而是真正的<strong>选择自己的性别</strong>。</p><p>生物告诉我们，男女不同仅仅在于第二十三对染色体的不同。那么我们可以通过更换染色体技术，例如女性变男性，可以从其父亲直系亲属获取Y染色体，然后更改自己的第二十三对染色体。通过快速克隆技术，快速让机体成长为成人形态。最后通过记忆移植技术来转移记忆，这样下来，是最自然的变性。之后的生活没有任何问题，能够享受一切生理状态。</p><h3 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h3><ol><li>不需要争论女性和男性谁更好或更差，大不了重新选择性别，可以免去大多数争议。</li><li>不存在职场歧视，当男女都能生育时，公司招聘和升职时并不能以当时的性别来判断。</li><li>不存在谁生育成本高，谁想要孩子谁生。也不存在养育问题，大不了都变女或变男。</li></ol><h3 id="满足欲望"><a href="#满足欲望" class="headerlink" title="满足欲望"></a>满足欲望</h3><p>还存在最后一个问题，那就是性侵害。这时候超级VR派上用处了，你欲望大？没问题，三千佳丽或男宠任你选择，还能捏脸或捏身材。一旦VR技术能够满足人体所有感觉，也就是神经，那么显然没人还需要冒着犯罪的风险进行性侵害。</p><p>好吧，只是一点胡思乱想，感谢浪费时间阅读。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+      <tag>男女权</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>shell基础笔记</title>
+    <link href="/2018/02/24/shell%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/"/>
+    <url>/2018/02/24/shell%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="shell编程基础"><a href="#shell编程基础" class="headerlink" title="shell编程基础"></a>shell编程基础</h1><h3 id="一-查看命令信息-type"><a href="#一-查看命令信息-type" class="headerlink" title="一.查看命令信息(type)"></a>一.查看命令信息(type)</h3><h3 id="二-变量"><a href="#二-变量" class="headerlink" title="二.变量"></a>二.变量</h3><table><thead><tr><th>变量操作</th><th>变量定义和增加</th><th>变量内容删除</th></tr></thead><tbody><tr><td>显示：echo</td><td>一个变量(同编程语言)</td><td>${变量#关键字}： 从头到尾，符合关键字最短的删除</td></tr><tr><td>取消：unset</td><td>变量数组</td><td>${变量##关键字}： 从头到尾，符合关键字最长的删除</td></tr><tr><td>要求输入：read</td><td>例如：PATH=${PATH}:/home/bin</td><td>${变量%/%%关键字}： 从尾到头，符合关键字最短/长的删除</td></tr></tbody></table><p>变量替换：<img src="/2018/02/24/shell%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/00.png" srcset="/img/loading.gif" alt="变量替换.jpg"></p><h3 id="三-环境变量"><a href="#三-环境变量" class="headerlink" title="三.环境变量"></a>三.环境变量</h3><table><thead><tr><th>基础指令</th><th>登录和欢迎信息文件</th><th>系统配置文件(开机)</th></tr></thead><tbody><tr><td>declare 直接显示环境变量 -x(化某一变量为全局变量)</td><td>/etc/issue</td><td>系统配置文件：/etc/profile</td></tr><tr><td>locale 查看语系</td><td>/etc/issue.net</td><td>个人配置文件：~/.bash_profile</td></tr><tr><td>ulimit(user limit)用户使用限制</td><td>/etc/motd(公告)</td><td>无登录配置文件：~/.bashrc</td></tr><tr><td>alias/ualias：别名设置</td><td></td><td>sourch：读取配置</td></tr></tbody></table><h3 id="四-通配符"><a href="#四-通配符" class="headerlink" title="四.通配符"></a>四.通配符</h3><table><thead><tr><th>*</th><th>?</th><th>[]</th><th>[ - ]</th><th>[ ^ ]</th></tr></thead><tbody><tr><td>0或无穷个任意字符</td><td>绝对一个字符</td><td>集合内任一字符</td><td>某一范围字符</td><td>不在某集合内</td></tr></tbody></table><h3 id="五-条件和管道"><a href="#五-条件和管道" class="headerlink" title="五.条件和管道"></a>五.条件和管道</h3><table><thead><tr><th>命令回传码</th><th>&amp;&amp;</th><th>&#124;&#124;</th><th>&#124;(管道)</th><th>-(使用前面的输出)</th></tr></thead><tbody><tr><td>前一条命令的执行结果</td><td>和</td><td>或</td><td>不解释</td><td>tar -cvf - /home &#124; tar -xvf -</td></tr></tbody></table><h3 id="六-信息处理"><a href="#六-信息处理" class="headerlink" title="六.信息处理"></a>六.信息处理</h3><table><thead><tr><th>选取</th><th>排序</th><th>统计</th><th>字符删除和替换</th><th>tab和空格转化</th><th>行合并</th><th>传递参数</th></tr></thead><tbody><tr><td>cut：每一行进行处理，类似字符串操作</td><td>sort</td><td>wc</td><td>tr</td><td>expand</td><td>join：相同两行合并</td><td>xargs：将输入的信息作为参数给后面命令</td></tr><tr><td>grep：查找包含特定字符的行</td><td>uniq(去除重复)</td><td></td><td></td><td>unexpand</td><td>paste：直接合并两行并中间tab隔开</td><td></td></tr></tbody></table><h3 id="七-正则表达式"><a href="#七-正则表达式" class="headerlink" title="七.正则表达式"></a>七.正则表达式</h3><table><thead><tr><th>特殊区间</th><th>基本正则字符</th><th>基本正则集合</th><th>常用工具</th><th>扩展的正则公式</th></tr></thead><tbody><tr><td>[:alnum:]英文字母和数字</td><td>^word 行首查找</td><td>[list] 集合</td><td>grep</td><td>+ 重复一个或一个以上前面字符</td></tr><tr><td>[:alpha:]英文字母</td><td>word$ 行尾查找</td><td>[n1-n2] 范围集合</td><td>egrep=grep -E</td><td>? 零个或一个前面字符</td></tr><tr><td>[:upper:]</td><td>.  一个任意字符</td><td>[^list] 反向选择</td><td>sed工具</td><td>&#124; or</td></tr><tr><td>[:lower:]</td><td>\  转义字符</td><td>\{n,m\} 指定数量重复字符</td><td>awk 用于将行分段处理</td><td>() 组字符</td></tr><tr><td>[:diger:]</td><td>*  任意多个字符</td><td></td><td></td><td>()+ 重复组字符</td></tr></tbody></table><h3 id="八-语法和执行"><a href="#八-语法和执行" class="headerlink" title="八.语法和执行"></a>八.语法和执行</h3><p><img src="/2018/02/24/shell%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/01.jpeg" srcset="/img/loading.gif" alt="shellScript.jpg"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>鸟哥Linux私房菜</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>运维篇笔记</title>
+    <link href="/2018/02/24/%E8%BF%90%E7%BB%B4%E7%AF%87%E7%AC%94%E8%AE%B0/"/>
+    <url>/2018/02/24/%E8%BF%90%E7%BB%B4%E7%AF%87%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="运维基础"><a href="#运维基础" class="headerlink" title="运维基础"></a>运维基础</h1><p>来自《鸟哥私房菜基础篇》</p><h3 id="一-例行工作"><a href="#一-例行工作" class="headerlink" title="一.例行工作"></a>一.例行工作</h3><p><img src="/2018/02/24/%E8%BF%90%E7%BB%B4%E7%AF%87%E7%AC%94%E8%AE%B0/00.jpeg" srcset="/img/loading.gif" alt="例行工作.jpg"></p><h3 id="二-工作管理"><a href="#二-工作管理" class="headerlink" title="二.工作管理"></a>二.工作管理</h3><table><thead><tr><th>前后台管理</th><th>查看和关闭进程</th></tr></thead><tbody><tr><td>直接后台：&amp;</td><td>jobs</td></tr><tr><td>暂停工作：[ctrl]-Z</td><td>kill -9(强制关闭)</td></tr><tr><td>前后台切换：fg/bg %jobnumber</td><td>nohup(退出系统后让任务依旧运行、只支持外部命令)</td></tr></tbody></table><h3 id="三-进程管理"><a href="#三-进程管理" class="headerlink" title="三.进程管理"></a>三.进程管理</h3><table><thead><tr><th>ps(显示进程)</th><th>top(动态显示)</th><th>pstree</th><th>进程优先级</th></tr></thead><tbody><tr><td>ps aux：所有的进程</td><td></td><td></td><td>ps中列出的PRI</td></tr><tr><td>ps -l：本bash的进程</td><td></td><td></td><td>PRI(new)=PRI(old)+nice</td></tr><tr><td>ps axjf：进程树模式</td><td></td><td></td><td>nice开始进程并赋值</td></tr><tr><td></td><td></td><td></td><td>renice已存在进程调整nice值</td></tr></tbody></table><h3 id="四-其他管理"><a href="#四-其他管理" class="headerlink" title="四.其他管理"></a>四.其他管理</h3><table><thead><tr><th>内存管理</th><th>跟踪网络</th><th>分析内核信息</th><th>检测系统资源变化</th></tr></thead><tbody><tr><td>free</td><td>netstat</td><td>dmesg</td><td>vmstat</td></tr></tbody></table><h3 id="五-进程与文件"><a href="#五-进程与文件" class="headerlink" title="五.进程与文件"></a>五.进程与文件</h3><table><thead><tr><th>/proc/*</th><th>常用命令</th></tr></thead><tbody><tr><td>保存了内存中的进程的文件</td><td>fuser：找出正在使用该文件的程序</td></tr><tr><td>cmdline：进程启动的命令串</td><td>isof：列出进程所打开的文件名</td></tr><tr><td>environ：进程的环境变量</td><td>pidof：给出进程的进程号</td></tr></tbody></table><h3 id="六-日志系统"><a href="#六-日志系统" class="headerlink" title="六.日志系统"></a>六.日志系统</h3><p>鸟哥书本与debian系统不一致</p><h3 id="七-系统启动"><a href="#七-系统启动" class="headerlink" title="七.系统启动"></a>七.系统启动</h3><h4 id="7-1-涉及文件"><a href="#7-1-涉及文件" class="headerlink" title="7.1 涉及文件"></a>7.1 涉及文件</h4><p>/boot/vmlinux：内核压缩文件</p><p>/boot/initrd+版本号.img：虚拟文件系统，用于加载内核文件</p><p>/boot/grub：启动器</p><h4 id="7-2内核模块"><a href="#7-2内核模块" class="headerlink" title="7.2内核模块"></a>7.2内核模块</h4><table><thead><tr><th>主要文件</th><th>内核命令</th></tr></thead><tbody><tr><td>内核：/boot/vmlinux-version</td><td>内核依赖性查看：depmod</td></tr><tr><td>内核解压缩：/boot/initrd</td><td>内核模块查看：ismod</td></tr><tr><td>内核模块：/lib/modules/version/kernel</td><td>内核加载：insmod</td></tr><tr><td></td><td>内核删除：rmmod</td></tr></tbody></table><h3 id="八-源码安装"><a href="#八-源码安装" class="headerlink" title="八.源码安装"></a>八.源码安装</h3><table><thead><tr><th>make命令</th><th>安装过程</th><th>影响目录</th></tr></thead><tbody><tr><td>将繁琐的编译和链接配置一次性完成</td><td>./configure  建立makefile文件和检测系统</td><td>/usr/local/etc</td></tr><tr><td>需要makefile文件</td><td>makeclean 去除旧的编译文件</td><td>/usr/local/bin</td></tr><tr><td></td><td>make  编译</td><td>/usr/local/lib</td></tr><tr><td></td><td>makeinstall  安装</td><td>/usr/local/man</td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>鸟哥Linux私房菜</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>基础篇笔记</title>
+    <link href="/2018/02/24/%E5%9F%BA%E7%A1%80%E7%AF%87%E7%AC%94%E8%AE%B0/"/>
+    <url>/2018/02/24/%E5%9F%BA%E7%A1%80%E7%AF%87%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="基础操作"><a href="#基础操作" class="headerlink" title="基础操作"></a>基础操作</h1><p>参考自：《鸟哥私房菜基础篇》</p><h3 id="基础操作-1"><a href="#基础操作-1" class="headerlink" title="基础操作"></a>基础操作</h3><h4 id="初次使用"><a href="#初次使用" class="headerlink" title="初次使用"></a>初次使用</h4><table><thead><tr><th>基础指令</th><th>帮助系统</th><th>系统操作</th><th>系统信息</th></tr></thead><tbody><tr><td>日期时间date</td><td>man</td><td>shutdown</td><td>uname</td></tr><tr><td>日历cal</td><td>info</td><td>reboot</td><td>PATH</td></tr><tr><td>计算器bc</td><td></td><td>sync</td><td></td></tr></tbody></table><h4 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h4><table><thead><tr><th>改变权限</th><th>默认权限</th><th>隐藏属性</th><th>特殊权限</th></tr></thead><tbody><tr><td>chgrp</td><td>umask</td><td>chatter(change attributes)</td><td>SUID(使用者暂时拥有root权限)</td></tr><tr><td>chown</td><td></td><td>lsatter(list attributes)</td><td>SGID(执行者获得该程序用户组的支持)</td></tr><tr><td>chmod</td><td></td><td></td><td>SBIT(用于目录,该目录文件仅所有者和root才有权限删除)</td></tr></tbody></table><h4 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h4><table><thead><tr><th>目录操作</th><th>文件操作</th><th>路径选取</th><th>查看文件信息</th></tr></thead><tbody><tr><td>ls</td><td>touch</td><td>basename</td><td>less</td></tr><tr><td>cd</td><td>cp</td><td>dirname</td><td>head</td></tr><tr><td>pwd</td><td>rm</td><td></td><td>tail</td></tr><tr><td>mkdir</td><td>mv</td><td></td><td></td></tr><tr><td>rmdir</td><td></td><td></td><td></td></tr></tbody></table><h4 id="文件检索"><a href="#文件检索" class="headerlink" title="文件检索"></a>文件检索</h4><table><thead><tr><th>which</th><th>whereis</th><th>locale</th><th>find</th></tr></thead><tbody><tr><td>寻找执行文件</td><td></td><td></td><td></td></tr></tbody></table><h4 id="打包和压缩"><a href="#打包和压缩" class="headerlink" title="打包和压缩"></a>打包和压缩</h4><table><thead><tr><th>tar压缩</th><th>查询</th><th>解压缩</th><th>cpio单文件包</th></tr></thead><tbody><tr><td>tar -jcv -f 目的文件 被压缩文件或文件夹</td><td>tar -jtv -f 压缩文件</td><td>tar -jxv -f 压缩包 -C 目的目录</td><td></td></tr></tbody></table><h3 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h3><h4 id="目录配置"><a href="#目录配置" class="headerlink" title="目录配置"></a>目录配置</h4><p><img src="/2018/02/24/%E5%9F%BA%E7%A1%80%E7%AF%87%E7%AC%94%E8%AE%B0/00.jpeg" srcset="/img/loading.gif" alt="linux目录.jpg"></p><h4 id="文件系统"><a href="#文件系统" class="headerlink" title="文件系统"></a>文件系统</h4><table><thead><tr><th>容量</th><th>链接ln</th><th>磁盘管理</th><th>挂载管理</th></tr></thead><tbody><tr><td>df</td><td>硬:产生一个指向实际文件头指针的指针</td><td>分区：parted</td><td>mount</td></tr><tr><td>du</td><td>软:单纯指向文件名</td><td>格式化：mkfs</td><td>umount</td></tr><tr><td></td><td></td><td>检验：fsck</td><td>开机挂载:/etc/fstab和/etc/mtab</td></tr><tr><td></td><td></td><td>参数修改：mknod</td><td>镜像挂载:mount -o -loop</td></tr></tbody></table><h4 id="系统备份和文件比较"><a href="#系统备份和文件比较" class="headerlink" title="系统备份和文件比较"></a>系统备份和文件比较</h4><table><thead><tr><th>备份和还原</th><th>镜像文件</th><th>文件比较和补丁</th></tr></thead><tbody><tr><td>dump</td><td>mkisofs</td><td>diff</td></tr><tr><td>restore</td><td>cdrecord(刻录)</td><td>patch</td></tr><tr><td></td><td>dd(刻录)</td><td></td></tr></tbody></table><h4 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h4><table><thead><tr><th>用户账号文件</th><th>账号管理命令</th><th>群组文件</th><th>群组管理命令</th><th>用户切换</th><th>登录信息</th></tr></thead><tbody><tr><td>/etc/passwd</td><td>useradd</td><td>/etc/group</td><td>groups：当前账号支持的群组</td><td>su</td><td>w</td></tr><tr><td>/etc/shadow</td><td>passwd</td><td>/etc/gshadow</td><td>newgrp：有效群组(当前生效群组)</td><td>sudo</td><td>who</td></tr><tr><td></td><td>usermod</td><td></td><td>groupadd</td><td>visudo(设置sudo使用权)</td><td>lastlog</td></tr><tr><td></td><td>userdel</td><td></td><td>groupdel</td><td></td><td>mail(用户间邮箱)</td></tr><tr><td></td><td></td><td></td><td>gpasswd(也可指定群管理员)</td><td></td><td></td></tr></tbody></table><h4 id="服务管理"><a href="#服务管理" class="headerlink" title="服务管理"></a>服务管理</h4><table><thead><tr><th>服务端口对应文件</th><th>启动脚本和启动方式</th><th>服务初始化环境配置文件</th><th>查看启动的服务</th><th>设置服务开机启动</th></tr></thead><tbody><tr><td>/etc/services</td><td>/etc/init.d/*</td><td>/etc/sysconfig/*</td><td>netstat</td><td>chkconfig</td></tr></tbody></table><h3 id="高级特性"><a href="#高级特性" class="headerlink" title="高级特性"></a>高级特性</h3><h4 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h4><p><img src="/2018/02/24/%E5%9F%BA%E7%A1%80%E7%AF%87%E7%AC%94%E8%AE%B0/01.jpeg" srcset="/img/loading.gif" alt="高级特性.jpg"></p><h4 id="LVM"><a href="#LVM" class="headerlink" title="LVM"></a>LVM</h4><p><img src="/2018/02/24/%E5%9F%BA%E7%A1%80%E7%AF%87%E7%AC%94%E8%AE%B0/02.png" srcset="/img/loading.gif" alt="LVM总结.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>鸟哥Linux私房菜</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Vimrc配置文件</title>
+    <link href="/2017/11/10/vimrc/"/>
+    <url>/2017/11/10/vimrc/</url>
+    
+    <content type="html"><![CDATA[<h1 id="我的vimrc配置文件"><a href="#我的vimrc配置文件" class="headerlink" title="我的vimrc配置文件"></a>我的vimrc配置文件</h1><pre><code class="vimrc">&quot;目录&quot;第一章:基本全局设定{{{"1.1 语法高亮"1.2 配色方案设置"1.3 显示行号设置"1.4 不兼容vi"1.5 使用系统剪切板"1.6 设置当前行高亮 "1.7 设置状态栏 "1.8 vimrc的折叠设定 "1.9 搜索高亮设置  "1.10 制表符设置 "1.11 自动换行"1.12 文件类型检测"1.13 鼠标支持"1.14 编码支持"}}} &quot;第二章：映射{{{"2.1 leader setting and local-leader setting"2.2 correct the bad habbits."2.3 set the abbreviation"2.4 workman layout"2.5 make the select-area surround by the symbol you need."2.6 快速设置vimrc"}}}&quot;第三章：自动匹配和自动补全{{{"3.1 {}匹配"3.2 ()匹配"3.3 ""匹配"3.4 ''匹配"3.5 <>匹配"3.6 <tab>自动补全"}}}&quot;第四章：插件{{{"}}}&quot;第五章：Java语言设置{{{"5.1 Java anotationn"5.2 Java 编译设置"5.3 Java 运行设置"5.4 Java 输出缩写"5.5 Java 主函数缩写"}}}&quot;1.1-1.4 合并设置{{{"1.1语法高亮syntax on"1.2配色方案colorscheme desert"1.3显示行号set nu"1.4设置不兼容vi:set nocompatible"}}}&quot;1.5 用于处理复制粘贴问题{{{"需要先查看是否支持系统剪贴板"普通模式映射sp作为粘贴命令nmap sp "+p"可视模式下映射sy作为复制命令vmap sy "+y"}}}&quot;1.6 当前行高亮{{{set cursorline"当前行高亮的配色:透明带hi CursorLine   cterm=NONE ctermbg=237 ctermfg=NONE guibg=darkred guifg=white"}}}&quot;1.7 设置状态栏{{{:set laststatus=2:set statusline=%4*\ %F\ %* :set statusline+=%=:set statusline+=\ %l:set statusline+=/:set statusline+=%L"}}}&quot;1.8 vimrc折叠设定---------------{{{set foldmethod=indentaugroup filetype_vimautocmd!autocmd FileType vim setlocal foldmethod=markeraugroup ENDnnoremap <space> za"}}}&quot;1.9 搜索设置{{{set hlsearch"}}}&quot;1.10 设置制表符与空格转化{{{set tabstop=4"}}}&quot;1.11 基本自动对齐{{{set autoindentset smartindentset shiftwidth=4set showmatch"}}}&quot;1.12 文件类型检测{{{filetype plugin indent on"}}}&quot;1.13 鼠标支持{{{set mouse=a"}}}&quot;1.14 编码支持{{{set fileencodings=utf-8,gbk,gb18030,utf-16,big5"}}}&quot;2.1 设置前缀{{{"设置前缀leaderlet mapleader = ";""设置本地前缀localleaderlet maplocalleader = "," "}}}&quot;2.2 改正坏习惯{{{"设置插入模式快速返回普通模式,并取消escinoremap hh <esc>" inoremap <esc> <nop>"取消上下左右键map <left> <nop>map <right> <nop>map <up> <nop>map <down> <nop>"}}}&quot;2.3 设置abbreviation{{{iabbrev @@ 1143515591@qq.comiabbrev hmc 何铭春"}}}&quot;2.4 设置workman键盘布局{{{" nnoremap j k" nnoremap k j"}}}&quot;2.5 设置选中区域加引号{{{vnoremap hh <esc>a"<esc>`<i"<esc>"}}}&quot;2.6 vimrc快速设置{{{"快速编辑vimrcnnoremap <leader>ev :vsplit $MYVIMRC<cr>"快速重载vimrc:nnoremap <leader>sv :source $MYVIMRC<cr>"}}}&quot;3.1 {}匹配{{{inoremap { {}<esc>i<cr><esc>ko"}}}&quot;3.2 ()匹配{{{inoremap ( ()<esc>ifunction SkipParen()let temp=getline('.')[col('.')-1]if temp==")"return "\<esc>la"elsereturn ")"endifendfunctioninoremap ) <c-r>=SkipParen()<cr>"}}}&quot;3.3 &quot;&quot;匹配{{{function SkipQuotation()let temp=getline('.')[col('.')-1]if temp=='"'return "\<esc>la"elsereturn '""'."\<esc>i"endifendfunctioninoremap " <c-r>=SkipQuotation()<cr>"}}}&quot;3.4 &#39;&#39;匹配{{{function SkipOtherQuotation()let temp=getline('.')[col('.')-1]if temp=="'"return "\<esc>la"elsereturn "''\<esc>i"endifendfunctioninoremap ' <c-r>=SkipOtherQuotation()<cr>"}}}&quot;3.5 &lt;&gt;匹配{{{inoremap < <><esc>ifunction SkipBook()let temp=getline('.')[col('.')-1]if temp==">"return "\<esc>la"elsereturn ">"endifendfunctioninoremap > <c-r>=SkipBook()<cr>"}}}&quot;3.6 &lt;tab&gt;自动补全{{{set omnifunc=omniinoremap <tab> <c-n>"}}}&quot;vimrc取消部分匹配    autocmd FileType vim inoremap { {&quot;5.1 Java 注释{{{function JavaAnnotation()let temp=getline(".")let aTemp=temp[0].temp[1]if aTemp ==# "//"normal ^xxelsenormal I//endifendfunction:autocmd FileType java nnoremap <buffer><leader>a :call JavaAnnotation()<cr>"}}}&quot;5.2 Java 编译设置{{{set makeprg=javac\ @%:autocmd FileType java nnoremap <buffer><F4> :!javac %<cr>"}}}&quot;5.3 运行Java{{{:autocmd FileType java nnoremap <buffer><F5> :!java %:r<cr>"}}}&quot;5.4 输出配置{{{autocmd FileType java iab pl System.out.println("autocmd FileType java iab pp System.out.print(""}}}&quot;5.5 main函数设置{{{:autocmd FileType java iab main public static void main(String[] args){"}}}</cr></F5></buffer></cr></F4></buffer></cr></leader></buffer></c-n></tab></cr></c-r></esc></esc></cr></c-r></esc></esc></cr></c-r></esc></esc></cr></c-r></esc></esc></esc></cr></esc></cr></leader></cr></leader></i"<esc></esc></esc></nop></down></nop></up></nop></right></nop></left></nop></esc></esc></space></tab></code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Vim</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
